@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -13,5 +14,9 @@
 
 .home {
   background: lightgreen;
+}
+
+.feature-card-img img {
+  width: 150px;
 }
 /*# sourceMappingURL=index.css.map */
