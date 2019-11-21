@@ -9,7 +9,7 @@ const indexRoute = require('./src/routes/index');
 
 const app = express();
 
-app.engine('html', consolidate.swig)
+app.engine('html', consolidate.swig);
 app.set('views', path.join(__dirname, 'src', 'views'));
 app.set('view engine', 'html');
 
