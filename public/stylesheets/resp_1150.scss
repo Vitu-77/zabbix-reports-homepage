@@ -1,0 +1,138 @@
+@media(max-width: 1150px){  
+    section.home{
+
+        header{
+            padding: 32px;
+        }
+
+        article.home-content{
+            
+            padding: 0 32px;
+            
+            div.home-content-left{
+
+                div.text-content{
+                    
+                    max-width: 100%;
+
+                    h2{
+                        font-size: 40px;
+                        width: 90%;
+                    }
+    
+                    p{
+                        font-size: 22px;
+                        width: 80%;
+                    }
+    
+                    a{
+                        font-size: 15px;
+                    }
+                }
+
+            }
+
+            div.home-content-right{
+                img{
+                  width: 500px;
+                }
+            }
+        }
+    }
+    
+    section.features{
+        div.subtitle-container{
+            h2{
+                font-size: 28px;
+            }
+        }
+
+        div.feature-cards{
+            margin-top: 45px;
+        }
+    
+        div.feature-cards{
+            article{
+                div.feature-card-img{
+                    img{
+                        width: 248px;
+                        height: 248px;
+                    }
+                }
+    
+                div.text-container{
+                    h3{
+                        font-size: 19px;
+                    }
+    
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    
+    section.ads{
+        
+        padding: 0 32px 32px 32px;
+    
+        div.subtitle-container{
+            h2{
+                font-size: 28px;
+            }
+        }
+    
+        article.prices{
+            div.price-cards{
+                div.big {
+                    flex: .65;
+                }
+    
+                div.small{
+                    flex: .32;
+                }
+            }
+        }
+    
+        article.demo-video{
+            div.subtitle-container{
+                h2{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    
+    section.getting-started{
+    
+        padding: 0 32px 32px 32px;
+    
+        div.subtitle-container{
+            h2{
+                font-size: 28px;
+            }
+        }
+    
+        div.content{    
+            div.content-right{
+
+                padding-left: 16px;
+    
+                h3{
+                    font-size: 19px;
+                }
+    
+                span{
+                    font-size: 15px;
+                }
+                
+                div.link-container{
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
