@@ -166,4 +166,51 @@
             }
         }
     }
+
+    section.contact{
+        padding: 32px 16px;
+    
+        div.contact-content{
+            article.faq{    
+                div.dropdown{
+                    div.row{    
+                        header{
+                            h4{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            article.contact-form{
+                form{
+
+                    display: grid;
+                    gap: 8px;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+                    input[name="email"]{
+                        grid-row-start: 2;
+                    }
+
+                    textarea{
+                        grid-column: span 1;
+                        grid-row-start: 3;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{        
+        div.footer-content{            
+            div.right{
+                img{
+                    width: 140px;
+                }
+            }
+        }
+    }
 }

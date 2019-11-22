@@ -75,5 +75,24 @@
   section.getting-started div.content div.content-right div.link-container a {
     font-size: 15px;
   }
+  section.contact {
+    padding: 128px 64px;
+  }
+  section.contact div.contact-content article.faq {
+    -webkit-box-flex: .48;
+        -ms-flex: .48;
+            flex: .48;
+  }
+  section.contact div.contact-content article.faq div.dropdown div.row header h4 {
+    font-size: 18px;
+  }
+  section.contact div.contact-content article.contact-form {
+    -webkit-box-flex: .48;
+        -ms-flex: .48;
+            flex: .48;
+  }
+  footer {
+    padding: 32px;
+  }
 }
 /*# sourceMappingURL=resp_1150.css.map */

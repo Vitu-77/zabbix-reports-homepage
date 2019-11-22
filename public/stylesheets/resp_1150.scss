@@ -135,4 +135,30 @@
             }
         }
     }
+
+    section.contact{
+        padding: 128px 64px;
+    
+        div.contact-content{
+            article.faq{    
+                flex: .48;
+                div.dropdown{
+                    div.row{    
+                        header{
+                            h4{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            article.contact-form{
+                flex: .48;
+            }
+        }
+    }
+
+    footer{
+        padding: 32px;
+    }
 }
