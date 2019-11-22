@@ -6,6 +6,16 @@
           box-sizing: border-box;
 }
 
+*::-moz-selection {
+  color: white;
+  background: #00AAC4;
+}
+
+*::selection {
+  color: white;
+  background: #00AAC4;
+}
+
 * a {
   text-decoration: none;
 }
@@ -20,7 +30,7 @@
 
 * body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   overflow-x: hidden !important;
   position: relative;
 }
@@ -32,7 +42,7 @@
   top: 0;
   left: 0;
   z-index: 20 !important;
-  background: rgba(46, 46, 46, 0.85);
+  background: #414141D9;
 }
 
 * body .hide-effect {
@@ -45,6 +55,21 @@
 
 * .hide-overflow {
   overflow: hidden !important;
+}
+
+* .try-it-btn {
+  background: #00AAC4;
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: 280ms;
+  transition: 280ms;
+}
+
+* .try-it-btn:hover {
+  background-color: #005E72;
 }
 
 section.home {
@@ -90,6 +115,10 @@ section.home header div.logo h1 {
   height: 0;
 }
 
+section.home header div.logo img {
+  width: 160px;
+}
+
 section.home header nav ul {
   width: 530px;
   height: 35px;
@@ -115,15 +144,29 @@ section.home header nav ul li {
 
 section.home header nav ul li a {
   font-size: 16px;
-  color: #000000;
+  color: #005E72;
   font-weight: 600;
+  -webkit-transition: 280ms;
+  transition: 280ms;
+}
+
+section.home header nav ul li a:hover {
+  color: #00AAC4;
 }
 
 section.home header nav ul li:last-child a {
   font-weight: 700;
+  color: #00AAC4;
   padding: 8px 16px;
   border-radius: 20px;
-  border: 2px solid #000000;
+  border: 2px solid #00AAC4;
+  -webkit-transition: 280ms;
+  transition: 280ms;
+}
+
+section.home header nav ul li:last-child a:hover {
+  background-color: #00AAC4;
+  color: white;
 }
 
 section.home header .hide-menu {
@@ -160,7 +203,7 @@ section.home article.home-content div.home-content-left div.text-content h2 {
   font-size: 48px;
   font-weight: 700;
   width: 70%;
-  color: #3A3A3A;
+  color: #545F63;
 }
 
 section.home article.home-content div.home-content-left div.text-content p {
@@ -168,18 +211,13 @@ section.home article.home-content div.home-content-left div.text-content p {
   margin-bottom: 32px;
   font-size: 24px;
   width: 60%;
-  color: #727176;
-  text-align: justify;
+  color: #757E85;
+  text-align: start;
   font-weight: 500;
 }
 
-section.home article.home-content div.home-content-left div.text-content a {
-  background: #727176;
-  color: #fff;
-  border-radius: 20px;
-  padding: 8px 16px;
-  font-size: 16px;
-  font-weight: 600;
+section.home article.home-content div.home-content-left div.text-content p strong {
+  color: #00AAC4;
 }
 
 section.home article.home-content div.home-content-right {
@@ -439,15 +477,6 @@ section.getting-started div.content div.content-right span {
 
 section.getting-started div.content div.content-right div.link-container {
   margin-top: 32px;
-}
-
-section.getting-started div.content div.content-right div.link-container a {
-  background: #727176;
-  color: #fff;
-  border-radius: 20px;
-  padding: 8px 16px;
-  font-size: 16px;
-  font-weight: 600;
 }
 
 footer {

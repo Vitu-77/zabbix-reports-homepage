@@ -36,3 +36,13 @@ effect.addEventListener('click', () => {
 
     body.classList.toggle('hide-overflow');
 });
+
+window.onscroll = ( ) => {
+    mobileMenu.classList.remove('show-menu');
+    mobileMenu.classList.add('hide-menu');
+
+    effect.classList.remove('show-effect');
+    effect.classList.add('hide-effect');
+
+    body.classList.remove('hide-overflow');
+}
