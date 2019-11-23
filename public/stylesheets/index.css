@@ -481,6 +481,7 @@ section.getting-started div.content div.content-right div.link-container {
 
 section.contact {
   padding: 128px;
+  max-height: 449px;
 }
 
 section.contact div.contact-content {
@@ -528,6 +529,14 @@ section.contact div.contact-content article.faq div.dropdown div.row:last-child 
   border-bottom: none !important;
 }
 
+section.contact div.contact-content article.faq div.dropdown div.row:hover header h4 {
+  color: #00AAC4;
+}
+
+section.contact div.contact-content article.faq div.dropdown div.row:hover header div.plus-icon div {
+  background: #00AAC4;
+}
+
 section.contact div.contact-content article.faq div.dropdown div.row header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,14 +547,6 @@ section.contact div.contact-content article.faq div.dropdown div.row header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-section.contact div.contact-content article.faq div.dropdown div.row header:hover h4 {
-  color: #00AAC4;
-}
-
-section.contact div.contact-content article.faq div.dropdown div.row header:hover div.plus-icon div {
-  background: #00AAC4;
 }
 
 section.contact div.contact-content article.faq div.dropdown div.row header h4 {
@@ -810,6 +811,7 @@ section.contact div.contact-content article.contact-form form textarea::placehol
 footer {
   width: 100%;
   padding: 32px 64px;
+  margin-top: 64px;
   background: #005E72;
 }
 
