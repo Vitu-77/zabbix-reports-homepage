@@ -6,6 +6,8 @@ const sassMiddleware = require('node-sass-middleware');
 const consolidate = require('consolidate');
 
 const indexRoute = require('./src/routes/index');
+const questionRoute = require('./src/routes/question');
+const messageReceivedRoute = require('./src/routes/messageReceived');
 
 const app = express();
 
@@ -23,10 +25,12 @@ app.use(cookieParser());
 app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
-  indentedSyntax: false, // true = .sass and false = .scss
+  indentedSyntax: false,
   sourceMap: true
 }));
 
 app.use(indexRoute);
+app.use(questionRoute);
+app.use(messageReceivedRoute);
 
 module.exports = app;
