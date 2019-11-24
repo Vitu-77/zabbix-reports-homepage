@@ -29,10 +29,12 @@
 }
 
 * body {
+  position: relative;
   font-family: 'Montserrat', sans-serif;
   background-color: #FFFFFF;
   overflow-x: hidden !important;
-  position: relative;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 * body div#effect {
@@ -70,6 +72,10 @@
 
 * .try-it-btn:hover {
   background-color: #005E72;
+}
+
+* main {
+  scroll-behavior: smooth;
 }
 
 section.home {
@@ -316,7 +322,7 @@ section.features div.feature-cards article div.text-container p {
   width: 211px;
 }
 
-section.ads {
+section.prices {
   background: #fcfcfc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,7 +339,7 @@ section.ads {
   padding: 0 64px;
 }
 
-section.ads div.subtitle-container h2 {
+section.prices div.subtitle-container h2 {
   margin: 32px 0;
   text-align: center;
   font-size: 32px;
@@ -341,7 +347,7 @@ section.ads div.subtitle-container h2 {
   color: #727176;
 }
 
-section.ads article.prices {
+section.prices article.prices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,7 +357,7 @@ section.ads article.prices {
           flex-direction: column;
 }
 
-section.ads article.prices div.price-cards {
+section.prices article.prices div.price-cards {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,28 +374,107 @@ section.ads article.prices div.price-cards {
           justify-content: space-between;
 }
 
-section.ads article.prices div.price-cards div.price-card {
+section.prices article.prices div.price-cards div.price-card {
   background: #C4C4C4;
   height: 400px;
 }
 
-section.ads article.prices div.price-cards div.big {
+section.prices article.prices div.price-cards div.big {
   -webkit-box-flex: .68;
       -ms-flex: .68;
           flex: .68;
 }
 
-section.ads article.prices div.price-cards div.small {
+section.prices article.prices div.price-cards div.small {
   -webkit-box-flex: .28;
       -ms-flex: .28;
           flex: .28;
 }
 
-section.ads article.demo-video div.video-container {
+section.prices article.demo-video div.video-container {
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+section.prices article.demo-video div.video-container video {
   width: 100%;
 }
 
-section.ads article.demo-video div.video-container video {
+section.videos {
+  background: #fcfcfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 64px;
+}
+
+section.videos div.subtitle-container h2 {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #727176;
+}
+
+section.videos article.prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.videos article.prices div.price-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.videos article.prices div.price-cards div.price-card {
+  background: #C4C4C4;
+  height: 400px;
+}
+
+section.videos article.prices div.price-cards div.big {
+  -webkit-box-flex: .68;
+      -ms-flex: .68;
+          flex: .68;
+}
+
+section.videos article.prices div.price-cards div.small {
+  -webkit-box-flex: .28;
+      -ms-flex: .28;
+          flex: .28;
+}
+
+section.videos article.demo-video div.video-container {
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+section.videos article.demo-video div.video-container video {
   width: 100%;
 }
 

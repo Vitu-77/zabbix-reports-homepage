@@ -9,16 +9,16 @@ $effect-color: #414141D9;
 $transition-duration: 280ms;
 
 *{
-
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
     &::selection{
         color: white;
         background: $primary-blue;
     }
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+    
     a{
         text-decoration: none;
     }
@@ -32,10 +32,13 @@ $transition-duration: 280ms;
     }
 
     body{
+        position: relative;
         font-family: 'Montserrat', sans-serif;
         background-color: $body-color;
         overflow-x: hidden !important;
-        position: relative;
+        
+        overflow-y: scroll;
+        scroll-behavior: smooth;
         
         div#effect{
             width: 100% !important;
@@ -59,7 +62,6 @@ $transition-duration: 280ms;
     .hide-overflow{
         overflow: hidden !important;
     }
-
     
     .try-it-btn{
         background: $primary-blue;
@@ -74,6 +76,10 @@ $transition-duration: 280ms;
             background-color: $secondary-blue;
         }
     }
+
+    main{
+        scroll-behavior: smooth;
+    }
 }
 
 section.home{
@@ -84,6 +90,7 @@ section.home{
     height: 100vh;
     min-height: 100vh;
     padding-bottom: 32px;
+
 
     header{
         min-width: 100%;
@@ -271,7 +278,7 @@ section.features{
     }
 }
 
-section.ads{
+section.prices{
     background: #fcfcfc;
     display: flex;
     flex-direction: column;
@@ -318,6 +325,63 @@ section.ads{
     article.demo-video{
         div.video-container{
             width: 100%;
+            padding-bottom: 32px;
+
+            video{
+                width: 100%;
+            }
+        }
+    }
+}
+
+section.videos{
+    background: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0 64px;
+
+    div.subtitle-container{
+        h2{
+            margin: 32px 0;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            color: #727176;
+        }
+    }
+
+    article.prices{
+        display: flex;
+        flex-direction: column;
+
+        div.price-cards{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+            div.price-card{
+                background: #C4C4C4;
+                height: 400px;
+            }
+
+            div.big {
+                flex: .68;
+            }
+
+            div.small{
+                flex: .28;
+            }
+        }
+    }
+
+    article.demo-video{
+        div.video-container{
+            width: 100%;
+            padding-bottom: 32px;
 
             video{
                 width: 100%;

@@ -19,20 +19,19 @@
 
 <body>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <header>
                 <div class="logo">
                     <h1>Zabbix Reports</h1>
                     <img importance="high" src="/images/logo/logo.svg" alt="Zabbix Reports Logo" />
                 </div>
-                <nav role="navigation" id="desktop-menu">
+                <nav role="navigation">
                     <ul>
-                        <!-- <li><a href="#">Home</a></li> -->
                         <li><a href="#about">About</a></li>
                         <li><a href="#prices">Prices</a></li>
                         <li><a href="#video">Videos</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Start Now</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#getting-started">Start Now</a></li>
                     </ul>
                 </nav>
 
@@ -74,7 +73,7 @@
             <div class="feature-cards">
                 <article>
                     <div class="feature-card-img">
-                        <img src="/images/home-illustration.svg" alt="minimalistic work illustration" />
+                        <img src="/images/illustrations/home-illustration.svg" alt="minimalistic work illustration" />
                     </div>
                     <div class="text-container">
                         <h3>Lorem ipsum</h3>
@@ -85,7 +84,7 @@
                 </article>
                 <article>
                     <div class="feature-card-img">
-                        <img src="/images/home-illustration.svg" alt="minimalistic work illustration" />
+                        <img src="/images/illustrations/home-illustration.svg" alt="minimalistic work illustration" />
                     </div>
                     <div class="text-container">
                         <h3>Lorem ipsum</h3>
@@ -96,7 +95,7 @@
                 </article>
                 <article>
                     <div class="feature-card-img">
-                        <img src="/images/home-illustration.svg" alt="minimalistic work illustration" />
+                        <img src="/images/illustrations/home-illustration.svg" alt="minimalistic work illustration" />
                     </div>
                     <div class="text-container">
                         <h3>Lorem ipsum</h3>
@@ -107,8 +106,8 @@
                 </article>
             </div>
         </section>
-        <section class="ads">
-            <article class="prices" id="prices">
+        <section class="prices" id="prices">
+            <article class="prices">
                 <div class="subtitle-container">
                     <h2>Start free, Pay only if you like it!</h2>
                 </div>
@@ -121,7 +120,9 @@
                     </div>
                 </div>
             </article>
-            <article class="demo-video" id="video">
+        </section>
+        <section class="videos" id="video">
+            <article class="demo-video">
                 <div class="subtitle-container">
                     <h2>Learn how to generate your first <br /> report</h2>
                 </div>
@@ -132,26 +133,7 @@
                 </div>
             </article>
         </section>
-        <section class="getting-started" id="getting-started">
-            <div class="subtitle-container">
-                <h2>Try it now for free!</h2>
-            </div>
-            <div class="content">
-                <div class="content-left">
-
-                </div>
-                <div class="content-right">
-                    <h3>Sign in with these credentials</h3>
-                    <span>Login: demo</span>
-                    <span>Password: demo</span>
-                    <div class="link-container">
-                        <a href="#" class="try-it-btn">Try it now</a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-content">
                 <article class="faq">
                     <h2>FAQ</h2>
@@ -208,12 +190,32 @@
                     <h3>Send us your question</h3>
                     <form action="/message-sended" method="POST">
                         <input value="victor" type="text" name="name" autocomplete="off" placeholder="Your name">
-                        <input value="vituwot@gmail.com" type="email" name="email" autocomplete="off" placeholder="Your email">
+                        <input value="vituwot@gmail.com" type="email" name="email" autocomplete="off"
+                            placeholder="Your email">
                         <textarea name="message" rows="3" autocomplete="off" autocapitalize="true"
                             placeholder="What's your question?"></textarea>
-                            <button type="submit">Submit</button>
+                        <button type="submit">Submit</button>
                     </form>
                 </article>
+            </div>
+        </section>
+        <section class="getting-started" id="getting-started">
+            <div class="subtitle-container">
+                <h2>Try it now for free!</h2>
+            </div>
+            <div class="content">
+                <div class="content-left">
+
+                </div>
+                <div class="content-right">
+                    <h3>Sign in with these credentials</h3>
+                    <span>Login: demo</span>
+                    <span>Password: demo</span>
+                    <div class="link-container">
+                        <a href="#" class="try-it-btn">Try it now</a>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>
@@ -226,10 +228,10 @@
             <div class="left">
                 <nav role="navigation">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Prices</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">Start now</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#prices">Prices</a></li>
+                        <li><a href="#video">Videos</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -239,6 +241,7 @@
 
     <script src="/javascripts/index/menu.js"></script>
     <script src="/javascripts/index/dropdown.js"></script>
+    <script src="/javascripts/index/smoothScroll.js"></script>
 </body>
 
 </html>
