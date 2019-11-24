@@ -1,5 +1,7 @@
+const nodeMailer = require('nodemailer');
+
 module.exports = {
-    generateEmail(name, email, message){
+    generateEmail(name, email, message) {
         const mail = `
             <div style="font-family: sans-serif;">
                 <h3>Olá!</h3>
@@ -22,5 +24,31 @@ module.exports = {
         `;
 
         return mail;
+    },
+
+    async sendMail(mail) {
+        const transporter = nodeMailer.createTransport({
+            host: 'smtp.gmail.com',
+            port: 587,
+            secure: false,
+            requireTLS: true,
+            auth: {
+                user: 'marcelo.victor05@gmail.com', // sender mail user
+                pass: 'arsenalvic' // sender mail password
+            }
+        });
+
+        const mailOptions = {
+            from: 'marcelo.victor05@gmail.com',
+            to: 'vituwot@gmail.com',
+            subject: `Zabbix Reports possui uma nova pergunta!`,
+            html: mail
+        };
+
+        await transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                return console.log(error.message);
+            }
+        });
     }
 }

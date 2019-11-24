@@ -6,7 +6,6 @@ const sassMiddleware = require('node-sass-middleware');
 const consolidate = require('consolidate');
 
 const indexRoute = require('./src/routes/index');
-const questionRoute = require('./src/routes/question');
 const messageReceivedRoute = require('./src/routes/messageReceived');
 
 const app = express();
@@ -30,7 +29,6 @@ app.use(sassMiddleware({
 }));
 
 app.use(indexRoute);
-app.use(questionRoute);
 app.use(messageReceivedRoute);
 
 module.exports = app;
