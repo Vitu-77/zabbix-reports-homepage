@@ -33,27 +33,27 @@
   section.features div.feature-cards article div.text-container p {
     font-size: 15px;
   }
-  section.ads {
-    padding: 0 16px 16px 16px;
+  section.prices {
+    padding: 0 16px;
   }
-  section.ads div.subtitle-container h2 {
+  section.prices div.subtitle-container h2 {
     font-size: 26px;
     margin: 16px 0;
   }
-  section.ads article.prices div.price-cards div.big {
+  section.prices article.prices div.price-cards div.big {
     -webkit-box-flex: .49;
         -ms-flex: .49;
             flex: .49;
   }
-  section.ads article.prices div.price-cards div.small {
+  section.prices article.prices div.price-cards div.small {
     -webkit-box-flex: .49;
         -ms-flex: .49;
             flex: .49;
   }
-  section.ads article.demo-video div.subtitle-container br {
+  section.videos article.demo-video div.subtitle-container br {
     display: none;
   }
-  section.ads article.demo-video div.subtitle-container h2 {
+  section.videos article.demo-video div.subtitle-container h2 {
     font-size: 26px;
     margin: 16px 0;
   }
@@ -85,7 +85,7 @@
     font-size: 15px;
   }
   section.contact {
-    padding: 64px 32px;
+    padding: 32px;
   }
   section.contact div.contact-content {
     -webkit-box-orient: vertical;
@@ -100,6 +100,8 @@
             flex: 1;
     width: 100%;
     margin-bottom: 32px;
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
   }
   section.contact div.contact-content article.faq div.dropdown div.row header h4 {
     font-size: 18px;
@@ -109,6 +111,18 @@
         -ms-flex: 1;
             flex: 1;
     width: 100%;
+  }
+  section.contact div.contact-content article.contact-form h2 {
+    opacity: 1 !important;
+  }
+  section.contact div.contact-content article.contact-form h3 {
+    opacity: 1 !important;
+  }
+  section.contact div.contact-content article.contact-form form {
+    opacity: 1 !important;
+  }
+  section.contact div.contact-content article.contact-form form button {
+    opacity: 1 !important;
   }
   footer {
     padding: 32px 16px;

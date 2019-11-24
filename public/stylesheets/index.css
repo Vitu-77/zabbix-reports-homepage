@@ -115,6 +115,11 @@ section.home header #mobile-menu, section.home header .show-mobile-menu-icon {
   display: none;
 }
 
+section.home header div.logo {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
 section.home header div.logo h1 {
   visibility: hidden;
   width: 0;
@@ -123,6 +128,11 @@ section.home header div.logo h1 {
 
 section.home header div.logo img {
   width: 160px;
+}
+
+section.home header nav {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
 }
 
 section.home header nav ul {
@@ -210,6 +220,7 @@ section.home article.home-content div.home-content-left div.text-content h2 {
   font-weight: 700;
   width: 70%;
   color: #545F63;
+  opacity: 0;
 }
 
 section.home article.home-content div.home-content-left div.text-content p {
@@ -220,10 +231,15 @@ section.home article.home-content div.home-content-left div.text-content p {
   color: #757E85;
   text-align: start;
   font-weight: 500;
+  opacity: 0;
 }
 
 section.home article.home-content div.home-content-left div.text-content p strong {
   color: #00AAC4;
+}
+
+section.home article.home-content div.home-content-left div.text-content a {
+  margin-left: -300px;
 }
 
 section.home article.home-content div.home-content-right {
@@ -239,6 +255,7 @@ section.home article.home-content div.home-content-right {
 
 section.home article.home-content div.home-content-right img {
   width: 100%;
+  opacity: 0;
 }
 
 section.features {
@@ -268,6 +285,9 @@ section.features div.subtitle-container h2 {
   text-align: center;
   font-size: 32px;
   font-weight: 700;
+  opacity: 0;
+  -webkit-transform: translateX(400%);
+          transform: translateX(400%);
 }
 
 section.features div.feature-cards {
@@ -299,6 +319,20 @@ section.features div.feature-cards article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+section.features div.feature-cards article:nth-child(1) {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
+section.features div.feature-cards article:nth-child(2) {
+  opacity: 0;
+}
+
+section.features div.feature-cards article:nth-child(3) {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
 }
 
 section.features div.feature-cards article div.feature-card-img img {
@@ -347,6 +381,10 @@ section.prices div.subtitle-container h2 {
   color: #727176;
 }
 
+section.prices div.subtitle-container h2 span {
+  opacity: 0;
+}
+
 section.prices article.prices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,6 +410,8 @@ section.prices article.prices div.price-cards {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 0;
+  opacity: 0;
 }
 
 section.prices article.prices div.price-cards div.price-card {
@@ -389,15 +429,6 @@ section.prices article.prices div.price-cards div.small {
   -webkit-box-flex: .28;
       -ms-flex: .28;
           flex: .28;
-}
-
-section.prices article.demo-video div.video-container {
-  width: 100%;
-  padding-bottom: 32px;
-}
-
-section.prices article.demo-video div.video-container video {
-  width: 100%;
 }
 
 section.videos {
@@ -423,50 +454,7 @@ section.videos div.subtitle-container h2 {
   font-size: 32px;
   font-weight: 700;
   color: #727176;
-}
-
-section.videos article.prices {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-section.videos article.prices div.price-cards {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-section.videos article.prices div.price-cards div.price-card {
-  background: #C4C4C4;
-  height: 400px;
-}
-
-section.videos article.prices div.price-cards div.big {
-  -webkit-box-flex: .68;
-      -ms-flex: .68;
-          flex: .68;
-}
-
-section.videos article.prices div.price-cards div.small {
-  -webkit-box-flex: .28;
-      -ms-flex: .28;
-          flex: .28;
+  opacity: 0;
 }
 
 section.videos article.demo-video div.video-container {
@@ -476,6 +464,8 @@ section.videos article.demo-video div.video-container {
 
 section.videos article.demo-video div.video-container video {
   width: 100%;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
 }
 
 section.getting-started {
@@ -565,7 +555,7 @@ section.getting-started div.content div.content-right div.link-container {
 }
 
 section.contact {
-  padding: 128px;
+  padding: 168px 128px;
 }
 
 section.contact div.contact-content {
@@ -584,6 +574,8 @@ section.contact div.contact-content article.faq {
   -webkit-box-flex: .4;
       -ms-flex: .4;
           flex: .4;
+  -webkit-transform: translateX(-800%);
+          transform: translateX(-800%);
 }
 
 section.contact div.contact-content article.faq h2 {
@@ -733,6 +725,7 @@ section.contact div.contact-content article.contact-form {
 section.contact div.contact-content article.contact-form h2 {
   font-size: 32px;
   color: #005E72;
+  opacity: 0;
 }
 
 section.contact div.contact-content article.contact-form h3 {
@@ -741,6 +734,7 @@ section.contact div.contact-content article.contact-form h3 {
   color: #545F63;
   font-weight: 700;
   position: relative;
+  opacity: 0;
 }
 
 section.contact div.contact-content article.contact-form form {
@@ -751,6 +745,7 @@ section.contact div.contact-content article.contact-form form {
       grid-template-columns: 1fr 1fr;
   grid-auto-columns: minmax(2, 2);
   grid-auto-rows: auto;
+  opacity: 0;
 }
 
 section.contact div.contact-content article.contact-form form button {
@@ -765,6 +760,7 @@ section.contact div.contact-content article.contact-form form button {
   -webkit-transition: 280ms;
   transition: 280ms;
   border: none !important;
+  opacity: 0;
 }
 
 section.contact div.contact-content article.contact-form form button:hover {

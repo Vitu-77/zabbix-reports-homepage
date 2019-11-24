@@ -67,9 +67,9 @@
         }
     }
     
-    section.ads{
+    section.prices{
         
-        padding: 0 16px 16px 16px;
+        padding: 0 16px;
     
         div.subtitle-container{
             h2{
@@ -89,13 +89,15 @@
                 }
             }
         }
+    }
     
+    section.videos{
         article.demo-video{
             div.subtitle-container{
                 br{
                     display: none;
                 }
-
+    
                 h2{
                     font-size: 26px;
                     margin: 16px 0;
@@ -144,7 +146,7 @@
     }
 
     section.contact{
-        padding: 64px 32px;
+        padding: 32px;
     
         div.contact-content{
 
@@ -155,6 +157,8 @@
                 flex: 1;
                 width: 100%;
                 margin-bottom: 32px;
+                transform: translateX(0) !important;
+
                 div.dropdown{
                     div.row{    
                         header{
@@ -168,6 +172,22 @@
             article.contact-form{
                 flex: 1;
                 width: 100%;
+
+                h2{
+                    opacity: 1 !important;
+                }
+    
+                h3{
+                    opacity: 1 !important;
+                }
+    
+                form{
+                    opacity: 1 !important;
+    
+                    button{
+                        opacity: 1 !important;
+                    }
+                }
             }
         }
     }

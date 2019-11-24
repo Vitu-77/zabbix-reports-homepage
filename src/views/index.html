@@ -109,7 +109,7 @@
         <section class="prices" id="prices">
             <article class="prices">
                 <div class="subtitle-container">
-                    <h2>Start free, Pay only if you like it!</h2>
+                    <h2><span id="fc">Start free,</span><span id="lc"> Pay only if you like it!</span></h2>
                 </div>
                 <div class="price-cards">
                     <div class="price-card big">
@@ -189,10 +189,10 @@
                     <h2>Get in touch</h2>
                     <h3>Send us your question</h3>
                     <form action="/message-sended" method="POST">
-                        <input value="victor" type="text" name="name" autocomplete="off" placeholder="Your name">
-                        <input value="vituwot@gmail.com" type="email" name="email" autocomplete="off"
+                        <input type="text" name="name" autocomplete="off" placeholder="Your name">
+                        <input type="email" name="email" autocomplete="off"
                             placeholder="Your email">
-                        <textarea name="message" rows="3" autocomplete="off" autocapitalize="true"
+                        <textarea name="message" rows="1" autocomplete="off" autocapitalize="true"
                             placeholder="What's your question?"></textarea>
                         <button type="submit">Submit</button>
                     </form>
@@ -239,9 +239,12 @@
     </footer>
     <div id="effect" class="hide-effect"></div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
     <script src="/javascripts/index/menu.js"></script>
     <script src="/javascripts/index/dropdown.js"></script>
     <script src="/javascripts/index/smoothScroll.js"></script>
+    <script src="/javascripts/index/animations.js"></script>
 </body>
 
 </html>

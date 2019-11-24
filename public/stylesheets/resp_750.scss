@@ -12,6 +12,10 @@ $transition-duration: 280ms;
             padding: 32px;
             position: relative;
 
+            div.logo{
+                transform: translateX(0) !important;
+            }
+
             #desktop-menu{
                 display: none;
             }
@@ -43,7 +47,7 @@ $transition-duration: 280ms;
                 top: 0;
                 z-index: 200;
                 transition: 250ms !important;
-
+                transform: translate(0,0) !important;
                 ul{
                     width: 80vw;
                     height: calc(100vh - 100px);
@@ -89,7 +93,6 @@ $transition-duration: 280ms;
             .show-menu{
                 right: 20vw;
             }
-
         }
 
         article.home-content{
@@ -109,16 +112,19 @@ $transition-duration: 280ms;
                     h2{
                         font-size: 48px;
                         text-align: center;
+                        opacity: 1 !important;
                     }
                     
                     p{
                         font-size: 24px;
                         text-align: center;
                         margin-top: 32px;
+                        opacity: 1 !important;
                     }
     
                     a{
                         padding: 8px 32px;
+                        margin-left: 0 !important;
                     }
                 }
 
@@ -139,6 +145,8 @@ $transition-duration: 280ms;
             h2{
                 font-size: 26px;
                 margin: 32px 0;
+                opacity: 1 !important;
+                transform: translateX(0) !important;
             }
         }
 
@@ -148,6 +156,10 @@ $transition-duration: 280ms;
     
         div.feature-cards{
             article{
+
+                transform: translateX(0) !important;
+                opacity: 1 !important;
+
                 div.feature-card-img{
                     img{
                         width: 200px;
@@ -168,14 +180,18 @@ $transition-duration: 280ms;
         }
     }
     
-    section.ads{
+    section.prices{
         
-        padding: 0 32px 32px 32px;
+        padding: 0 32px;
     
         div.subtitle-container{
             h2{
                 font-size: 26px;
                 margin: 32px 0;
+
+                span{
+                    opacity: 1 !important;
+                }
             }
         }
     
@@ -183,6 +199,8 @@ $transition-duration: 280ms;
             div.price-cards{
 
                 height: 430px;
+                width: 100% !important;
+                opacity: 1 !important;
 
                 div.big {
                     flex: .49;
@@ -193,7 +211,9 @@ $transition-duration: 280ms;
                 }
             }
         }
-    
+    }
+
+    section.videos{
         article.demo-video{            
             div.subtitle-container{
                 br{
@@ -203,6 +223,7 @@ $transition-duration: 280ms;
                 h2{
                     margin: 32px 0;
                     font-size: 26px;
+                    opacity: 1 !important;
                 }
             }
         }

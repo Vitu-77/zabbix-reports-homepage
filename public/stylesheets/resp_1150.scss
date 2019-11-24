@@ -73,9 +73,9 @@
         }
     }
     
-    section.ads{
+    section.prices{
         
-        padding: 0 32px 32px 32px;
+        padding: 0 32px;
     
         div.subtitle-container{
             h2{
@@ -94,7 +94,11 @@
                 }
             }
         }
+    }
     
+    section.videos{
+        padding: 0 32px;
+
         article.demo-video{
             div.subtitle-container{
                 h2{
@@ -103,7 +107,7 @@
             }
         }
     }
-    
+
     section.getting-started{
     
         padding: 0 32px 32px 32px;

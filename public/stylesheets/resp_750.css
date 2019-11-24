@@ -3,6 +3,10 @@
     padding: 32px;
     position: relative;
   }
+  section.home header div.logo {
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+  }
   section.home header #desktop-menu {
     display: none;
   }
@@ -42,6 +46,8 @@
     z-index: 200;
     -webkit-transition: 250ms !important;
     transition: 250ms !important;
+    -webkit-transform: translate(0, 0) !important;
+            transform: translate(0, 0) !important;
   }
   section.home header nav.mobile-menu ul {
     width: 80vw;
@@ -110,14 +116,17 @@
   section.home article.home-content div.home-content-left div.text-content h2 {
     font-size: 48px;
     text-align: center;
+    opacity: 1 !important;
   }
   section.home article.home-content div.home-content-left div.text-content p {
     font-size: 24px;
     text-align: center;
     margin-top: 32px;
+    opacity: 1 !important;
   }
   section.home article.home-content div.home-content-left div.text-content a {
     padding: 8px 32px;
+    margin-left: 0 !important;
   }
   section.home article.home-content div.home-content-right {
     display: none;
@@ -128,9 +137,17 @@
   section.features div.subtitle-container h2 {
     font-size: 26px;
     margin: 32px 0;
+    opacity: 1 !important;
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
   }
   section.features div.feature-cards {
     margin-top: 32px;
+  }
+  section.features div.feature-cards article {
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+    opacity: 1 !important;
   }
   section.features div.feature-cards article div.feature-card-img img {
     width: 200px;
@@ -142,32 +159,38 @@
   section.features div.feature-cards article div.text-container p {
     font-size: 14px;
   }
-  section.ads {
-    padding: 0 32px 32px 32px;
+  section.prices {
+    padding: 0 32px;
   }
-  section.ads div.subtitle-container h2 {
+  section.prices div.subtitle-container h2 {
     font-size: 26px;
     margin: 32px 0;
   }
-  section.ads article.prices div.price-cards {
+  section.prices div.subtitle-container h2 span {
+    opacity: 1 !important;
+  }
+  section.prices article.prices div.price-cards {
     height: 430px;
+    width: 100% !important;
+    opacity: 1 !important;
   }
-  section.ads article.prices div.price-cards div.big {
+  section.prices article.prices div.price-cards div.big {
     -webkit-box-flex: .49;
         -ms-flex: .49;
             flex: .49;
   }
-  section.ads article.prices div.price-cards div.small {
+  section.prices article.prices div.price-cards div.small {
     -webkit-box-flex: .49;
         -ms-flex: .49;
             flex: .49;
   }
-  section.ads article.demo-video div.subtitle-container br {
+  section.videos article.demo-video div.subtitle-container br {
     display: none;
   }
-  section.ads article.demo-video div.subtitle-container h2 {
+  section.videos article.demo-video div.subtitle-container h2 {
     margin: 32px 0;
     font-size: 26px;
+    opacity: 1 !important;
   }
   section.getting-started {
     padding: 0 32px 32px 32px;
