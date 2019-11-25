@@ -3,6 +3,16 @@
 
         header{
             padding: 16px;
+
+            div.logo{
+                //animation-property
+                transform: translateX(0) !important;
+            }
+
+            nav{
+                //animation-property
+                transform: translateX(0) !important;
+            }
         }
 
         article.home-content{
@@ -15,11 +25,22 @@
                     h2{
                         font-size: 33px;
                         width: 100%;
+
+                        //animation-property
+                        opacity: 1 !important;
                     }
     
                     p{
                         font-size: 19.33px;
                         width: 100%;
+
+                        //animation-property
+                        opacity: 1 !important;
+                    }
+
+                    a{
+                        //animation-property
+                        margin-left: 0px !important;
                     }
                 }
 
@@ -27,7 +48,10 @@
 
             div.home-content-right{
                 img{
-                  width: 450px;
+                    width: 450px;
+
+                    //animation-property
+                    opacity: 1 !important;
                 }
             }
         }
@@ -37,12 +61,12 @@
         div.subtitle-container{
             h2{
                 font-size: 26px;
-                margin: 16px 0;
-            }
-        }
+                margin: 32px 0;
 
-        div.feature-cards{
-            margin-top: 45px;
+                //animation-property
+                transform: translateX(0%) !important;
+                opacity: 1 !important;
+            }
         }
     
         div.feature-cards{
@@ -50,27 +74,22 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             padding: 64px;
-            margin: -32px 0;
+            margin: -64px 0 -32px 0;
+            gap: 32px 0;
             
             article{
 
-                &:nth-child(1){
-                    transform: translateX(-50%);
-                }
-                &:nth-child(2){
-                    transform: translateX(50%);
-                }
-                &:nth-child(3){
-                    transform: translateX(-50%);
-                }
-                &:nth-child(4){
-                    transform: translateX(50%);
-                }
+                //transition-property
+                transform: translateX(0) !important;
+                opacity: 1 !important;
 
                 div.feature-card-img{
                     img{
                         width: 240px;
                         height: 240px;
+                        padding: 40px;
+                        background: #ccc;
+                        border-radius: 100%;
                     }
                 }
     
@@ -93,6 +112,11 @@
             div.subtitle-container{
                 h2{
                     font-size: 26px;
+
+                    span{
+                        //transition-property
+                        opacity: 1 !important;
+                    }
                 }
             }
 
@@ -130,7 +154,7 @@
                 }
 
                 div.big{
-                    margin-top: 64px;
+                    margin-top: 84px;
                     width: 100%;
                     padding-bottom: 32px;
                 }
@@ -148,8 +172,16 @@
     
                 h2{
                     font-size: 26px;
-                    margin: 16px 0;
+                    margin: 16px 0 32px 0;
+
+                    //trasition-property
+                    opacity: 1 !important;
                 }
+            }
+
+            video{
+                //trasition-property
+                transform: translateX(0) !important;
             }
         }
     }
@@ -205,6 +237,8 @@
                 flex: 1;
                 width: 100%;
                 margin-bottom: 32px;
+
+                //trasition-property
                 transform: translateX(0) !important;
 
                 div.dropdown{
@@ -222,17 +256,21 @@
                 width: 100%;
 
                 h2{
+                    //trasition-property
                     opacity: 1 !important;
                 }
     
                 h3{
+                    //trasition-property
                     opacity: 1 !important;
                 }
     
                 form{
+                    //trasition-property
                     opacity: 1 !important;
     
                     button{
+                        //trasition-property
                         opacity: 1 !important;
                     }
                 }

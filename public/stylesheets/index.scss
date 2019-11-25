@@ -91,7 +91,6 @@ section.home{
     min-height: 100vh;
     padding-bottom: 32px;
 
-
     header{
         min-width: 100%;
         display: flex;
@@ -105,6 +104,7 @@ section.home{
 
         div.logo{
 
+            //animation-property
             transform: translateX(-200%);
 
             h1{
@@ -120,6 +120,7 @@ section.home{
 
         nav{
 
+            //animation-property
             transform: translateX(200%);
 
             ul{
@@ -190,7 +191,7 @@ section.home{
                     width: 70%;
                     color: $primary-grey;
 
-                    //anim-property
+                    //animation-property
                     opacity: 0;
                 }
     
@@ -203,7 +204,7 @@ section.home{
                     text-align: start;
                     font-weight: 500;
 
-                    //anim-property
+                    //animation-property
                     opacity: 0;
 
                     strong{
@@ -212,6 +213,7 @@ section.home{
                 }
 
                 a{
+                    //animation-property
                     margin-left: -300px;
                 }
             }
@@ -225,6 +227,8 @@ section.home{
 
             img{
                 width: 100%;
+
+                //animation-property
                 opacity: 0;
             }
         }
@@ -237,7 +241,6 @@ section.features{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // padding: 32px 0;
 
     br{
         display: none;
@@ -249,6 +252,8 @@ section.features{
             text-align: center;
             font-weight: 700;
             font-size: 32px;
+
+            //animation-property
             transform: translateX(-50%);
             opacity: 0;
         }
@@ -269,6 +274,7 @@ section.features{
             align-items: center;
             justify-content: flex-start;
 
+            //transition-property
             &:nth-child(1){
                 transform: translateX(-50%);
                 opacity: 0;
@@ -333,6 +339,7 @@ section.prices{
                 color: white;
     
                 span{
+                    //transition-property
                     opacity: 0;
                 }
             }
@@ -364,8 +371,6 @@ section.prices{
                     &:nth-child(2){
                         background: #fff;
                         position: relative;
-
-                        // transform: translateY(50%);
 
                         &::before{
                             content: '';
@@ -472,6 +477,8 @@ section.videos{
             font-size: 32px;
             font-weight: 700;
             color: white;
+
+            //trasition-property
             opacity: 0;
         }
     }
@@ -483,6 +490,8 @@ section.videos{
 
             video{
                 width: 100%;
+
+                //trasition-property
                 transform: translateX(200%);
             }
         }
@@ -569,6 +578,8 @@ section.contact{
         article.faq{
 
             flex: .4;
+
+            //trasition-property
             transform: translateX(-800%);
 
             h2{
@@ -694,6 +705,8 @@ section.contact{
             h2{
                 font-size: 32px;
                 color: $secondary-blue;
+
+                //trasition-property
                 opacity: 0;
             }
 
@@ -703,6 +716,8 @@ section.contact{
                 color: $primary-grey;
                 font-weight: 700;
                 position: relative;
+
+                //trasition-property
                 opacity: 0;
             }
 
@@ -712,6 +727,8 @@ section.contact{
                 grid-template-columns: 1fr 1fr;
                 grid-auto-columns: minmax(2, 2);
                 grid-auto-rows: auto;
+
+                //trasition-property
                 opacity: 0;
 
                 button{
@@ -725,6 +742,8 @@ section.contact{
                     font-weight: 600;
                     transition: $transition-duration;
                     border: none !important;
+
+                    //trasition-property
                     opacity: 0;
 
                     &:hover{
