@@ -22,35 +22,44 @@ const animate = () => {
         const aboutTimeline = new TimelineMax();
 
         aboutTimeline
-            .to(featuresTitle, .4, {
-                transform: 'translateX(0)',
-                opacity: 1
+            .to(featuresTitle, .8, {
+                transform: 'translate(0, 0)',
+                opacity: 1,
+                ease: Expo.easeOut, y: -500,
             })
-            .to(featureCards[0], .4, {
-                transform: 'translateY(0)'
+            .to(featureCards[1], .6, {
+                transform: 'translate(0, 0)',
+                opacity: 1,
+                ease: Expo.easeOut, y: -500,
             })
-            .to(featureCards[1], .4, {
-                opacity: 1
+            .to(featureCards[0], .6, {
+                transform: 'translate(0, 0)',
+                opacity: 1,
+                ease: Expo.easeOut, y: -500,
             })
-            .to(featureCards[2], .2, {
-                transform: 'translateY(0)'
+            .to(featureCards[3], .4, {
+                transform: 'translate(0, 0)',
+                opacity: 1,
+                ease: Expo.easeOut, y: -500,
             })
-    }
+            .to(featureCards[2], .6, {
+                transform: 'translate(0, 0)',
+                opacity: 1,
+                ease: Expo.easeOut, y: -500,
+            })
+        }
 
     if (window.scrollY >= pricesOffsetTop) {
         const startFree = get('article.prices .subtitle-container h2 span#fc');
         const payOnly = get('article.prices .subtitle-container h2 span#lc');
-        const priceCards = get('.price-cards');
+        const texts = getAll('div.small div');
 
         const pricesTimeline = new TimelineMax();
 
         pricesTimeline
             .to(startFree, 1, { opacity: 1 })
             .to(payOnly, .4, { opacity: 1 })
-            .to(priceCards, .4, {
-                width: '100%',
-                opacity: 1,
-            })
+            
 
     }
 

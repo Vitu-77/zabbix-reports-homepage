@@ -28,11 +28,12 @@
     font-size: 28px;
   }
   section.features div.feature-cards {
-    margin: -32px 0 0 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin: -64px 0 0 0;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    padding: 32px 0;
   }
   section.features div.feature-cards article div.feature-card-img img {
     width: 285px;
@@ -45,30 +46,49 @@
   section.features div.feature-cards article div.text-container p {
     font-size: 16px;
   }
-  section.prices div.subtitle-container h2 {
+  section.prices {
+    padding: 0 8px;
+  }
+  section.prices article.prices div.subtitle-container h2 {
     font-size: 26px;
     margin: 32px 0;
+    text-align: center;
   }
-  section.prices article.prices div.price-cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 600px;
+  section.prices article.prices div.subtitle-container h2 span {
+    opacity: 1 !important;
   }
-  section.prices article.prices div.price-cards div.big {
-    width: 100%;
-    width: 80%;
-    -webkit-box-flex: .55;
-        -ms-flex: .55;
-            flex: .55;
+  section.prices article.prices div.content-container div.big {
+    padding-bottom: 16px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 32px;
+    gap: 8px 0;
   }
-  section.prices article.prices div.price-cards div.small {
-    width: 100%;
-    width: 80%;
-    -webkit-box-flex: .4;
-        -ms-flex: .4;
-            flex: .4;
+  section.prices article.prices div.content-container div.big div.price-card {
+    padding-bottom: 248px;
+  }
+  section.prices article.prices div.content-container div.big div.price-card::before {
+    display: none;
+  }
+  section.prices article.prices div.content-container div.small div.subtitle-container {
+    margin-bottom: 8px;
+  }
+  section.prices article.prices div.content-container div.small div.subtitle-container h2 {
+    font-size: 23px;
+    text-align: center;
+  }
+  section.prices article.prices div.content-container div.small div.button-container {
+    margin-top: 16px;
+  }
+  section.prices article.prices div.content-container div.small div.button-container a {
+    padding: 10px 100px;
+  }
+  section.prices article.prices div.content-container div.small div.button-container a img {
+    width: 35%;
   }
   section.videos article.demo-video div.subtitle-container br {
     display: none;
@@ -77,28 +97,30 @@
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
   }
-  section.getting-started {
-    padding: 0 32px 32px 32px;
+  div.getting-started {
+    padding: 0 32px 0 32px;
   }
-  section.getting-started div.subtitle-container h2 {
+  div.getting-started div.subtitle-container h2 {
     font-size: 26px;
     margin: 32px 0;
   }
-  section.getting-started div.content {
+  div.getting-started div.content {
     height: 388px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  section.getting-started div.content div.content-left {
+  div.getting-started div.content div.content-left {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    height: 388px;
   }
-  section.getting-started div.content div.content-right {
+  div.getting-started div.content div.content-left img {
+    max-width: 270px;
+  }
+  div.getting-started div.content div.content-right {
     text-align: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -106,18 +128,18 @@
     width: 100%;
     padding: 0;
   }
-  section.getting-started div.content div.content-right h3 {
+  div.getting-started div.content div.content-right h3 {
     font-size: 19px;
   }
-  section.getting-started div.content div.content-right span {
+  div.getting-started div.content div.content-right span {
     font-size: 15px;
   }
-  section.getting-started div.content div.content-right div.link-container a {
-    padding: 16px 64px;
+  div.getting-started div.content div.content-right div.link-container a {
+    padding: 12px 64px;
     border-radius: 25px;
   }
   section.contact {
-    padding: 16px;
+    padding: 32px 16px;
   }
   section.contact div.contact-content article.faq h2 {
     font-size: 28px;

@@ -25,13 +25,13 @@
                     <h1>Zabbix Reports</h1>
                     <img importance="high" src="/images/logo/logo.svg" alt="Zabbix Reports Logo" />
                 </div>
-                <nav role="navigation">
+                <nav role="navigation" id="desktop-menu">
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#prices">Prices</a></li>
-                        <li><a href="#video">Videos</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#getting-started">Start Now</a></li>
+                        <li><a class="nav-link" href="#about">About</a></li>
+                        <li><a class="nav-link" href="#prices">Prices</a></li>
+                        <li><a class="nav-link" href="#video">Videos</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                        <li><a href="#">Start Now</a></li>
                     </ul>
                 </nav>
 
@@ -42,11 +42,10 @@
                 </div>
                 <nav role="navigation" class="mobile-menu hide-menu">
                     <ul>
-                        <!-- <li><a href="#">Home</a></li> -->
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#prices">Prices</a></li>
-                        <li><a href="#video">Videos</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a class="nav-link" href="#about">About</a></li>
+                        <li><a class="nav-link" href="#prices">Prices</a></li>
+                        <li><a class="nav-link" href="#video">Videos</a></li>
+                        <li><a class="nav-link" href="#">Contact</a></li>
                         <li><a href="#">Start Now</a></li>
                     </ul>
                 </nav>
@@ -76,10 +75,8 @@
                         <img src="/images/illustrations/home-illustration.svg" alt="minimalistic work illustration" />
                     </div>
                     <div class="text-container">
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis erat in molestie
-                            faucibus
-                        </p>
+                        <h3>Models</h3>
+                        <p>Create and save unlimited template templates any way you want!</p>
                     </div>
                 </article>
                 <article>
@@ -87,10 +84,8 @@
                         <img src="/images/illustrations/home-illustration.svg" alt="minimalistic work illustration" />
                     </div>
                     <div class="text-container">
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis erat in molestie
-                            faucibus
-                        </p>
+                        <h3>Save</h3>
+                        <p>Save your reports unlimited</p>
                     </div>
                 </article>
                 <article>
@@ -98,10 +93,18 @@
                         <img src="/images/illustrations/home-illustration.svg" alt="minimalistic work illustration" />
                     </div>
                     <div class="text-container">
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis erat in molestie
-                            faucibus
-                        </p>
+                        <h3>Export</h3>
+                        <p>When you finish your report, simply export to HTML or PDF.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="feature-card-img">
+                        <img src="/images/illustrations/home-illustration.svg" alt="minimalistic work illustration" />
+                    </div>
+                    <div class="text-container">
+                        <h3>vHost</h3>
+                        <p>Have your own vhost</p>
+                        <p>yourdomain.zabbix.report</p>
                     </div>
                 </article>
             </div>
@@ -111,12 +114,65 @@
                 <div class="subtitle-container">
                     <h2><span id="fc">Start free,</span><span id="lc"> Pay only if you like it!</span></h2>
                 </div>
-                <div class="price-cards">
-                    <div class="price-card big">
-                        big
+                <div class="content-container">
+                    <div class="big">
+                        <div class="price-card">
+                            <header>
+                                <h4>Alone</h4>
+                            </header>
+                            <div class="content">
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                            </div>
+                        </div>
+                        <div class="price-card">
+                            <header>
+                                <h4>Customize</h4>
+                            </header>
+                            <div class="content">
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                            </div>
+                        </div>
+                        <div class="price-card">
+                            <header>
+                                <h4>Reseller</h4>
+                            </header>
+                            <div class="content">
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                                <span>Lorem</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="price-card small">
-                        small
+                    <div class="small">
+                        <div class="subtitle-container">
+                            <h2>Choose the best plan for you</h2>
+                        </div>
+                        <div class="paragraph-container">
+                            <p>Click the button below and
+                                follow the steps to start
+                                making your <strong>reports</strong>.</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#">
+                                <img src="/images/icons/paypal.svg" alt="paypal logo">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -124,7 +180,7 @@
         <section class="videos" id="video">
             <article class="demo-video">
                 <div class="subtitle-container">
-                    <h2>Learn how to generate your first <br /> report</h2>
+                    <h2>Learn how to generate your first report</h2>
                 </div>
                 <div class="video-container">
                     <video controls>
@@ -133,6 +189,25 @@
                 </div>
             </article>
         </section>
+        <div class="getting-started" id="getting-started">
+            <div class="subtitle-container">
+                <h2>Try it now for free!</h2>
+            </div>
+            <div class="content">
+                <div class="content-left">
+                    <img src="/images/illustrations/rocket.svg" alt="rocket">
+                </div>
+                <div class="content-right">
+                    <h3>Sign in with these credentials</h3>
+                    <span>Login: demo</span>
+                    <span>Password: demo</span>
+                    <div class="link-container">
+                        <a href="#" class="try-it-btn">Try it now</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
         <section class="contact" id="contact">
             <div class="contact-content">
                 <article class="faq">
@@ -190,32 +265,12 @@
                     <h3>Send us your question</h3>
                     <form action="/message-sended" method="POST">
                         <input type="text" name="name" autocomplete="off" placeholder="Your name">
-                        <input type="email" name="email" autocomplete="off"
-                            placeholder="Your email">
+                        <input type="email" name="email" autocomplete="off" placeholder="Your email">
                         <textarea name="message" rows="1" autocomplete="off" autocapitalize="true"
                             placeholder="What's your question?"></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </article>
-            </div>
-        </section>
-        <section class="getting-started" id="getting-started">
-            <div class="subtitle-container">
-                <h2>Try it now for free!</h2>
-            </div>
-            <div class="content">
-                <div class="content-left">
-
-                </div>
-                <div class="content-right">
-                    <h3>Sign in with these credentials</h3>
-                    <span>Login: demo</span>
-                    <span>Password: demo</span>
-                    <div class="link-container">
-                        <a href="#" class="try-it-btn">Try it now</a>
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
     </main>
@@ -228,10 +283,10 @@
             <div class="left">
                 <nav role="navigation">
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#prices">Prices</a></li>
-                        <li><a href="#video">Videos</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a class="nav-link" href="#about">About</a></li>
+                        <li><a class="nav-link" href="#prices">Prices</a></li>
+                        <li><a class="nav-link" href="#video">Videos</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>

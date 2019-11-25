@@ -142,7 +142,7 @@
             transform: translateX(0) !important;
   }
   section.features div.feature-cards {
-    margin-top: 32px;
+    margin-top: -90px;
   }
   section.features div.feature-cards article {
     -webkit-transform: translateX(0) !important;
@@ -160,29 +160,17 @@
     font-size: 14px;
   }
   section.prices {
-    padding: 0 32px;
+    padding: 0 16px;
   }
-  section.prices div.subtitle-container h2 {
+  section.prices article.prices div.subtitle-container h2 {
     font-size: 26px;
     margin: 32px 0;
   }
-  section.prices div.subtitle-container h2 span {
+  section.prices article.prices div.subtitle-container h2 span {
     opacity: 1 !important;
   }
-  section.prices article.prices div.price-cards {
-    height: 430px;
-    width: 100% !important;
-    opacity: 1 !important;
-  }
-  section.prices article.prices div.price-cards div.big {
-    -webkit-box-flex: .49;
-        -ms-flex: .49;
-            flex: .49;
-  }
-  section.prices article.prices div.price-cards div.small {
-    -webkit-box-flex: .49;
-        -ms-flex: .49;
-            flex: .49;
+  section.prices article.prices div.content-container div.big {
+    padding-bottom: 16px;
   }
   section.videos article.demo-video div.subtitle-container br {
     display: none;
@@ -192,40 +180,53 @@
     font-size: 26px;
     opacity: 1 !important;
   }
-  section.getting-started {
-    padding: 0 32px 32px 32px;
+  section.videos article.demo-video div.video-container video {
+    border-radius: 2px;
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
   }
-  section.getting-started div.subtitle-container h2 {
+  div.getting-started {
+    padding: 0 32px 0 32px;
+  }
+  div.getting-started div.subtitle-container h2 {
     font-size: 26px;
     margin: 32px 0;
   }
-  section.getting-started div.content {
+  div.getting-started div.content {
     height: 388px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  section.getting-started div.content div.content-left {
+  div.getting-started div.content div.content-left {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    height: 388px;
   }
-  section.getting-started div.content div.content-right {
+  div.getting-started div.content div.content-left img {
+    max-width: 300px;
+  }
+  div.getting-started div.content div.content-right {
     -webkit-box-flex: .5;
         -ms-flex: .5;
             flex: .5;
     width: 100%;
-    padding: 0 32px 32px 0;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  section.getting-started div.content div.content-right h3 {
-    font-size: 19px;
+  div.getting-started div.content div.content-right h3 {
+    font-size: 22px;
   }
-  section.getting-started div.content div.content-right span {
-    font-size: 15px;
+  div.getting-started div.content div.content-right span {
+    font-size: 17px;
   }
-  section.getting-started div.content div.content-right div.link-container a {
-    font-size: 15px;
+  div.getting-started div.content div.content-right div.link-container a {
+    font-size: 17px;
+    padding: 8px 64px;
   }
   footer {
     padding: 32px;

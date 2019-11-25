@@ -45,8 +45,11 @@
         }
 
         div.feature-cards{
-            margin: -32px 0 0 0;
-            flex-direction: column;
+            margin: -64px 0 0 0;
+            
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            padding: 32px 0;
         }
     
         div.feature-cards{
@@ -73,29 +76,60 @@
     }
     
     section.prices{
-        div.subtitle-container{
-            h2{
-                font-size: 26px;
-                margin: 32px 0;
-            }
-        }
-    
+        
+        padding: 0 8px;
+
         article.prices{
-            div.price-cards{
-
-                flex-direction: column;
-                height: 600px;
-
-                div.big {
-                    width: 100%;
-                    width: 80%;
-                    flex: .55;
-                }
+            div.subtitle-container{
+                h2{
+                    font-size: 26px;
+                    margin: 32px 0;
+                    text-align: center;
     
+                    span{
+                        opacity: 1 !important;
+                    }
+                }
+            }
+    
+            div.content-container{
+                div.big{
+                    padding-bottom: 16px;
+
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    
+                    padding: 0 32px;
+                    gap: 8px 0;
+
+                    div.price-card{
+                        padding-bottom: 248px;
+
+                        &::before{
+                            display: none;
+                        }
+                    }
+                }
+
                 div.small{
-                    width: 100%;
-                    width: 80%;
-                    flex: .4;
+                    div.subtitle-container{
+                        margin-bottom: 8px;
+                        h2{
+                            font-size: 23px;
+                            text-align: center;
+                        }
+                    }
+                    div.button-container{
+                        margin-top: 16px;
+                        a{
+                            padding: 10px 100px;
+                            img{
+                                width: 35%;
+                            }
+                        }
+    
+                    }
                 }
             }
         }
@@ -117,9 +151,9 @@
         }
     }
     
-    section.getting-started{
+    div.getting-started{
     
-        padding: 0 32px 32px 32px;
+        padding: 0 32px 0 32px;
     
         div.subtitle-container{
             h2{
@@ -127,7 +161,6 @@
                 margin: 32px 0;
             }
         }
-    
         
         div.content{   
             
@@ -136,7 +169,11 @@
 
             div.content-left{
                 flex: 1;
-                transform: scale(1.1);
+                height: 388px;
+    
+                img{
+                    max-width: 270px;
+                }
             }
 
             div.content-right{
@@ -157,7 +194,7 @@
                 
                 div.link-container{
                     a{
-                        padding: 16px 64px;
+                        padding: 12px 64px;
                         border-radius: 25px;
                     }
                 }
@@ -166,7 +203,7 @@
     }
 
     section.contact{
-        padding: 16px;
+        padding: 32px 16px;
     
         div.contact-content{
             article.faq{

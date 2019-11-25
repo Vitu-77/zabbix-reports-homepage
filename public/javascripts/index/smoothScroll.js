@@ -1,4 +1,4 @@
-const navLinks = document.querySelectorAll('nav ul li a');
+const navLinks = document.querySelectorAll('nav ul li a.nav-link');
 const sections = document.querySelectorAll('section');
 const sectionsPositions = [];
 
@@ -17,9 +17,9 @@ const setSmoothScroll = (navLink, targetPosition) => {
     });
 }
 
-for(let i = 0; i < navLinks.length; i++){
-    
-    let sectionIterator = i < 5 ? i + 1 : (i < 10 ? i - 4 : i - 9);
+for (let i = 0; i < navLinks.length; i++) {
+
+    let sectionIterator = i < 4 ? i + 1 : (i < 9 ? i - 3 : i - 8);
 
     setSmoothScroll(navLinks[i], sectionsPositions[sectionIterator]);
 }

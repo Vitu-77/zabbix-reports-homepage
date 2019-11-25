@@ -260,7 +260,6 @@ section.home article.home-content div.home-content-right img {
 
 section.features {
   background: #F5F5F5;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,26 +282,26 @@ section.features br {
 section.features div.subtitle-container h2 {
   margin: 32px 0;
   text-align: center;
-  font-size: 32px;
   font-weight: 700;
+  font-size: 32px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   opacity: 0;
-  -webkit-transform: translateX(400%);
-          transform: translateX(400%);
 }
 
 section.features div.feature-cards {
   height: 100%;
   width: 100%;
-  margin-top: 16px;
-  padding-bottom: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin: 0 0 32px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.features div.feature-cards article {
@@ -316,23 +315,33 @@ section.features div.feature-cards article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 section.features div.feature-cards article:nth-child(1) {
-  -webkit-transform: translateX(-200%);
-          transform: translateX(-200%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
 }
 
 section.features div.feature-cards article:nth-child(2) {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   opacity: 0;
 }
 
 section.features div.feature-cards article:nth-child(3) {
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  opacity: 0;
+}
+
+section.features div.feature-cards article:nth-child(4) {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  opacity: 0;
 }
 
 section.features div.feature-cards article div.feature-card-img img {
@@ -357,32 +366,8 @@ section.features div.feature-cards article div.text-container p {
 }
 
 section.prices {
-  background: #fcfcfc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 64px;
-}
-
-section.prices div.subtitle-container h2 {
-  margin: 32px 0;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  color: #727176;
-}
-
-section.prices div.subtitle-container h2 span {
-  opacity: 0;
+  background: #545F63;
+  padding: 0 32px;
 }
 
 section.prices article.prices {
@@ -393,10 +378,29 @@ section.prices article.prices {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-section.prices article.prices div.price-cards {
+section.prices article.prices div.subtitle-container h2 {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+section.prices article.prices div.subtitle-container h2 span {
+  opacity: 0;
+}
+
+section.prices article.prices div.content-container {
   width: 100%;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,29 +414,155 @@ section.prices article.prices div.price-cards {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 0;
-  opacity: 0;
 }
 
-section.prices article.prices div.price-cards div.price-card {
-  background: #C4C4C4;
-  height: 400px;
-}
-
-section.prices article.prices div.price-cards div.big {
+section.prices article.prices div.content-container div.big {
   -webkit-box-flex: .68;
       -ms-flex: .68;
           flex: .68;
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
-section.prices article.prices div.price-cards div.small {
-  -webkit-box-flex: .28;
-      -ms-flex: .28;
-          flex: .28;
+section.prices article.prices div.content-container div.big div.price-card {
+  border: 4px solid #fff;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 250px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card:nth-child(2) {
+  background: #fff;
+  position: relative;
+}
+
+section.prices article.prices div.content-container div.big div.price-card:nth-child(2)::before {
+  content: '';
+  background: #fff;
+  border-left: 8px solid #fff;
+  border-right: 8px solid #fff;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: -10%;
+  left: -8px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card header {
+  padding: 8px 0;
+}
+
+section.prices article.prices div.content-container div.big div.price-card header h4 {
+  text-align: center !important;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.content {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.prices article.prices div.content-container div.small {
+  -webkit-box-flex: .30;
+      -ms-flex: .30;
+          flex: .30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 34;
+}
+
+section.prices article.prices div.content-container div.small div.subtitle-container {
+  margin-bottom: 16px;
+}
+
+section.prices article.prices div.content-container div.small div.subtitle-container h2 {
+  font-size: 36px;
+  color: white;
+  text-align: start;
+  margin: 0;
+}
+
+section.prices article.prices div.content-container div.small div.paragraph-container {
+  margin-bottom: 16px;
+}
+
+section.prices article.prices div.content-container div.small div.paragraph-container p {
+  width: 70%;
+  text-align: start;
+  font-size: 17px;
+  color: white;
+  font-weight: 300;
+}
+
+section.prices article.prices div.content-container div.small div.button-container {
+  margin-top: 16px;
+}
+
+section.prices article.prices div.content-container div.small div.button-container a {
+  position: relative;
+  background: #00AAC4;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 60px;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: 280ms;
+  transition: 280ms;
+}
+
+section.prices article.prices div.content-container div.small div.button-container a:hover {
+  background-color: #005E72;
+}
+
+section.prices article.prices div.content-container div.small div.button-container a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  pointer-events: none;
 }
 
 section.videos {
-  background: #fcfcfc;
+  background: #545F63;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,7 +583,7 @@ section.videos div.subtitle-container h2 {
   text-align: center;
   font-size: 32px;
   font-weight: 700;
-  color: #727176;
+  color: white;
   opacity: 0;
 }
 
@@ -468,7 +598,7 @@ section.videos article.demo-video div.video-container video {
           transform: translateX(200%);
 }
 
-section.getting-started {
+div.getting-started {
   background: #F5F5F5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,18 +613,18 @@ section.getting-started {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 64px 64px 64px;
+  padding: 0 64px 0 64px;
 }
 
-section.getting-started div.subtitle-container h2 {
+div.getting-started div.subtitle-container h2 {
   margin: 32px 0;
   text-align: center;
   font-size: 32px;
   font-weight: 700;
-  color: #727176;
+  color: #757E85;
 }
 
-section.getting-started div.content {
+div.getting-started div.content {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,15 +640,24 @@ section.getting-started div.content {
           justify-content: center;
 }
 
-section.getting-started div.content div.content-left {
+div.getting-started div.content div.content-left {
   -webkit-box-flex: .65;
       -ms-flex: .65;
           flex: .65;
   height: 388px;
-  background: #C4C4C4;
+  position: relative;
 }
 
-section.getting-started div.content div.content-right {
+div.getting-started div.content div.content-left img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 500px;
+}
+
+div.getting-started div.content div.content-right {
   -webkit-box-flex: .4;
       -ms-flex: .4;
           flex: .4;
@@ -537,25 +676,25 @@ section.getting-started div.content div.content-right {
           justify-content: flex-start;
 }
 
-section.getting-started div.content div.content-right h3 {
+div.getting-started div.content div.content-right h3 {
   font-size: 20px;
   font-weight: 600;
   color: #727176;
   margin-bottom: 8px;
 }
 
-section.getting-started div.content div.content-right span {
+div.getting-started div.content div.content-right span {
   font-size: 16px;
   font-weight: 400;
   color: #727176;
 }
 
-section.getting-started div.content div.content-right div.link-container {
+div.getting-started div.content div.content-right div.link-container {
   margin-top: 32px;
 }
 
 section.contact {
-  padding: 168px 128px;
+  padding: 128px;
 }
 
 section.contact div.contact-content {

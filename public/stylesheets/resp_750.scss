@@ -149,12 +149,9 @@ $transition-duration: 280ms;
                 transform: translateX(0) !important;
             }
         }
-
-        div.feature-cards{
-            margin-top: 32px;
-        }
     
         div.feature-cards{
+            margin-top: -90px;
             article{
 
                 transform: translateX(0) !important;
@@ -182,32 +179,23 @@ $transition-duration: 280ms;
     
     section.prices{
         
-        padding: 0 32px;
-    
-        div.subtitle-container{
-            h2{
-                font-size: 26px;
-                margin: 32px 0;
+        padding: 0 16px;
 
-                span{
-                    opacity: 1 !important;
+        article.prices{
+            div.subtitle-container{
+                h2{
+                    font-size: 26px;
+                    margin: 32px 0;
+    
+                    span{
+                        opacity: 1 !important;
+                    }
                 }
             }
-        }
     
-        article.prices{
-            div.price-cards{
-
-                height: 430px;
-                width: 100% !important;
-                opacity: 1 !important;
-
-                div.big {
-                    flex: .49;
-                }
-    
-                div.small{
-                    flex: .49;
+            div.content-container{
+                div.big{
+                    padding-bottom: 16px;
                 }
             }
         }
@@ -226,12 +214,19 @@ $transition-duration: 280ms;
                     opacity: 1 !important;
                 }
             }
+
+            div.video-container{
+                video{
+                    border-radius: 2px;
+                    transform: translateX(0) !important;
+                }
+            }
         }
     }
     
-    section.getting-started{
+    div.getting-started{
     
-        padding: 0 32px 32px 32px;
+        padding: 0 32px 0 32px;
     
         div.subtitle-container{
             h2{
@@ -248,25 +243,32 @@ $transition-duration: 280ms;
 
             div.content-left{
                 flex: 1;
+                height: 388px;
+    
+                img{
+                    max-width: 300px;
+                }
             }
 
             div.content-right{
                 
                 flex: .5;
                 width: 100%;
-                padding: 0 32px 32px 0;
+                padding: 0;
+                align-items: center;
     
                 h3{
-                    font-size: 19px;
+                    font-size: 22px;
                 }
     
                 span{
-                    font-size: 15px;
+                    font-size: 17px;
                 }
                 
                 div.link-container{
                     a{
-                        font-size: 15px;
+                        font-size: 17px;
+                        padding: 8px 64px;
                     }
                 }
             }
