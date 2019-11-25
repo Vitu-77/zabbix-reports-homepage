@@ -80,16 +80,13 @@
             article{
 
                 //transition-property
-                transform: translateX(0) !important;
+                margin-left: 0 !important;
                 opacity: 1 !important;
 
                 div.feature-card-img{
                     img{
                         width: 240px;
                         height: 240px;
-                        padding: 40px;
-                        background: #ccc;
-                        border-radius: 100%;
                     }
                 }
     
@@ -116,6 +113,9 @@
                     span{
                         //transition-property
                         opacity: 1 !important;
+                        &:last-child{
+                            margin-left: 0 !important;
+                        }
                     }
                 }
             }
@@ -127,8 +127,13 @@
     
                 div.small{
                     align-items: center;
+
                     div.subtitle-container{
                         margin-bottom: 8px;
+
+                        //transition-property
+                        transform: translateX(0) !important;
+                        opacity: 1 !important;
                         h2{
                             font-size: 23px;
                             text-align: center;
@@ -136,6 +141,10 @@
                     }
                     div.paragraph-container{
                         margin-bottom: 8px;
+
+                        //transition-property
+                        transform: translateX(0) !important;
+                        opacity: 1 !important;
                         p{
                             width: 100%;
                             text-align: center;
@@ -143,6 +152,10 @@
                     }
                     div.button-container{
                         margin-top: 8px;
+
+                        //transition-property
+                        transform: translateX(0) !important;
+                        opacity: 1 !important;
                         a{
                             padding: 10px 100px;
                             img{
@@ -157,6 +170,12 @@
                     margin-top: 84px;
                     width: 100%;
                     padding-bottom: 32px;
+
+                    div.price-card{
+                        //transition-property
+                        margin-bottom: 0 !important;
+                        opacity: 1 !important;
+                    }
                 }
             }
         }
@@ -175,13 +194,14 @@
                     margin: 16px 0 32px 0;
 
                     //trasition-property
+                    margin-left: 0 !important;
                     opacity: 1 !important;
                 }
             }
 
-            video{
-                //trasition-property
-                transform: translateX(0) !important;
+            iframe{
+                //transition-property
+                opacity: 1 !important;
             }
         }
     }

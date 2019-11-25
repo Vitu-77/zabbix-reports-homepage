@@ -14,6 +14,8 @@ const animate = () => {
     const contact = get('section#contact');
     const contactOffsetTop = Math.floor(contact.offsetTop * 0.8);
 
+
+    // features-animation
     if (window.scrollY >= featuresOffsetTop) {
 
         const featuresTitle = get('.features .subtitle-container h2');
@@ -23,55 +25,89 @@ const animate = () => {
 
         aboutTimeline
             .to(featuresTitle, .8, {
-                transform: 'translate(0, 0)',
+                marginLeft: 0,
                 opacity: 1,
-                ease: Expo.easeOut, y: -500,
             })
-            .to(featureCards[1], .6, {
-                transform: 'translate(0, 0)',
+            .to(featureCards[0], .4, {
+                marginLeft: 0,
                 opacity: 1,
-                ease: Expo.easeOut, y: -500,
             })
-            .to(featureCards[0], .6, {
-                transform: 'translate(0, 0)',
+            .to(featureCards[1], .4, {
+                marginLeft: 0,
                 opacity: 1,
-                ease: Expo.easeOut, y: -500,
             })
-            .to(featureCards[3], .4, {
-                transform: 'translate(0, 0)',
+            .to(featureCards[2], .4, {
+                marginLeft: 0,
                 opacity: 1,
-                ease: Expo.easeOut, y: -500,
             })
-            .to(featureCards[2], .6, {
-                transform: 'translate(0, 0)',
+            .to(featureCards[3], .6, {
+                marginLeft: 0,
                 opacity: 1,
-                ease: Expo.easeOut, y: -500,
             })
-        }
+    }
 
+    //prices-animation
     if (window.scrollY >= pricesOffsetTop) {
         const startFree = get('article.prices .subtitle-container h2 span#fc');
         const payOnly = get('article.prices .subtitle-container h2 span#lc');
+        const priceCards = getAll('div.price-card');
         const texts = getAll('div.small div');
 
         const pricesTimeline = new TimelineMax();
 
-        pricesTimeline
-            .to(startFree, 1, { opacity: 1 })
-            .to(payOnly, .4, { opacity: 1 })
-            
+        console.log(texts);
 
+        pricesTimeline
+            .to(startFree, 1, {
+                opacity: 1,
+                marginLeft: 0
+            })
+            .to(payOnly, .4, {
+                opacity: 1,
+                marginLeft: 0
+            })
+            .to(priceCards[2], .4, {
+                marginBottom: 0,
+                opacity: 1,
+            })
+            .to(priceCards[0], .4, {
+                marginBottom: 0,
+                opacity: 1,
+            })
+            .to(priceCards[1], .5, {
+                marginBottom: 0,
+                opacity: 1,
+            })
+            .to(texts[0], .4, {
+                transform: 'translateX(0)',
+                opacity: 1,
+                ease: Back.easeOut.config(1.7), x: -15
+            })
+            .to(texts[1], .4, {
+                transform: 'translateX(0)',
+                opacity: 1,
+                ease: Back.easeOut.config(1.7), x: -15
+            })
+            .to(texts[2], .6, {
+                transform: 'translateX(0)',
+                opacity: 1,
+                ease: Back.easeOut.config(1.7), x: -15
+            })
     }
 
+    //videos-animation
     if (window.scrollY >= videosOffsetTop) {
         const videoTitle = get('article.demo-video .subtitle-container h2');
-        const video = get('.video-container video');
+        const video = get('.video-container iframe');
 
         const videoTimeline = new TimelineMax();
 
         videoTimeline
-            .to(videoTitle, .8, { opacity: 1 })
-            .to(video, 1, { transform: 'translateX(0)' }, { easy: Power2.easyInOut })
+            .to(videoTitle, .6, { 
+                opacity: 1,
+                marginLeft: 0,
+            })
+            .to(video, .8, { opacity: 1 })
     }
 
     if (window.scrollY >= contactOffsetTop) {
@@ -108,7 +144,7 @@ window.onload = () => {
         .to(homeContentTitle, .2, { opacity: 1 })
         .to(homeContentParagraph, .2, { opacity: 1 })
         .to(homeContentButton, .2, { marginLeft: 0 })
-        .to(homeContentImg, 1.2, { opacity: 1 });
+        .to(homeContentImg, 1.2, { opacity: 1, ease: Back.easeOut.config(1.7), x: -15 });
 
     animate();
 }

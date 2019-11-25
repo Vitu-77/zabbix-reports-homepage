@@ -47,16 +47,12 @@
     gap: 32px 0;
   }
   section.features div.feature-cards article {
-    -webkit-transform: translateX(0) !important;
-            transform: translateX(0) !important;
+    margin-left: 0 !important;
     opacity: 1 !important;
   }
   section.features div.feature-cards article div.feature-card-img img {
     width: 240px;
     height: 240px;
-    padding: 40px;
-    background: #ccc;
-    border-radius: 100%;
   }
   section.features div.feature-cards article div.text-container h3 {
     font-size: 19px;
@@ -73,6 +69,9 @@
   section.prices article.prices div.subtitle-container h2 span {
     opacity: 1 !important;
   }
+  section.prices article.prices div.subtitle-container h2 span:last-child {
+    margin-left: 0 !important;
+  }
   section.prices article.prices div.content-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -87,6 +86,9 @@
   }
   section.prices article.prices div.content-container div.small div.subtitle-container {
     margin-bottom: 8px;
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+    opacity: 1 !important;
   }
   section.prices article.prices div.content-container div.small div.subtitle-container h2 {
     font-size: 23px;
@@ -94,6 +96,9 @@
   }
   section.prices article.prices div.content-container div.small div.paragraph-container {
     margin-bottom: 8px;
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+    opacity: 1 !important;
   }
   section.prices article.prices div.content-container div.small div.paragraph-container p {
     width: 100%;
@@ -101,6 +106,9 @@
   }
   section.prices article.prices div.content-container div.small div.button-container {
     margin-top: 8px;
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+    opacity: 1 !important;
   }
   section.prices article.prices div.content-container div.small div.button-container a {
     padding: 10px 100px;
@@ -113,6 +121,10 @@
     width: 100%;
     padding-bottom: 32px;
   }
+  section.prices article.prices div.content-container div.big div.price-card {
+    margin-bottom: 0 !important;
+    opacity: 1 !important;
+  }
   section.videos {
     padding: 0 16px;
   }
@@ -122,11 +134,11 @@
   section.videos article.demo-video div.subtitle-container h2 {
     font-size: 26px;
     margin: 16px 0 32px 0;
+    margin-left: 0 !important;
     opacity: 1 !important;
   }
-  section.videos article.demo-video video {
-    -webkit-transform: translateX(0) !important;
-            transform: translateX(0) !important;
+  section.videos article.demo-video iframe {
+    opacity: 1 !important;
   }
   div.getting-started {
     padding: 0 16px 0 16px;

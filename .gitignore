@@ -55,5 +55,8 @@ typings/
 .yarn-integrity
 
 # css maps
-index.css
 index.css.map
+
+#other
+TODO.md
+allowLowSecureAcess.md
