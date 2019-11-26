@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+$body-color: #FFFFFF;
+$primary-blue: #00AAC4;
+$secondary-blue: #005E72;
+$primary-grey: #545F63;
+$secondary-grey: #757E85;
+$effect-color: #414141D9;
+$transition-duration: 280ms;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::selection{
+        background: $primary-blue;
+        color: white;
+    }
+}
+
+body{
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+main{    
+    section{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            display: none;
+        }
+
+        h2{
+            min-width: 96%;
+            font-size: 48px;
+            font-weight: 700;
+            width: 70%;
+            text-align: center;
+            color: $primary-grey;
+            margin: 30px 0;
+        }
+
+        h3{
+            min-width: 80%;
+            margin-top: 8px;
+            margin-bottom: 32px;
+            font-size: 24px;
+            width: 60%;
+            color: $secondary-grey;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            background: $primary-blue;
+            color: #fff;
+            border-radius: 28px;
+            padding: 16px 64px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: $transition-duration;
+
+            &:hover{
+                background-color: $secondary-blue;
+            }
+        }
+    }
+}

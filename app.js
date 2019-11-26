@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const consolidate = require('consolidate');
+const dotEnv = require('dotenv').config();
 
 const indexRoute = require('./src/routes/index');
 const messageReceivedRoute = require('./src/routes/messageReceived');

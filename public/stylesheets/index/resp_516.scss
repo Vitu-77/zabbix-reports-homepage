@@ -55,6 +55,9 @@
         div.feature-cards{
             article{
                 div.feature-card-img{
+                    
+                    margin-top: 16px;
+
                     img{
                         width: 285px;
                         height: 285px;
@@ -62,8 +65,10 @@
                 }
     
                 div.text-container{
+                    
+                    margin-top: 8px;
+                    
                     h3{
-                        margin-top: -32px;
                         font-size: 22px;
                     }
     
@@ -94,16 +99,13 @@
     
             div.content-container{
                 div.big{
-                    padding-bottom: 16px;
-
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr 1fr 1fr;
-                    
-                    padding: 0 32px;
-                    gap: 8px 0;
+                    flex-direction: column;
+                    width: 80%;
+                    margin-top: 32px;
 
                     div.price-card{
+                        width: 100%;
+                        margin-bottom: 8px !important;
                         padding-bottom: 248px;
 
                         &::before{

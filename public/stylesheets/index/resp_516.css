@@ -35,12 +35,17 @@
         grid-template-rows: repeat(4, 1fr);
     padding: 32px 0;
   }
+  section.features div.feature-cards article div.feature-card-img {
+    margin-top: 16px;
+  }
   section.features div.feature-cards article div.feature-card-img img {
     width: 285px;
     height: 285px;
   }
+  section.features div.feature-cards article div.text-container {
+    margin-top: 8px;
+  }
   section.features div.feature-cards article div.text-container h3 {
-    margin-top: -32px;
     font-size: 22px;
   }
   section.features div.feature-cards article div.text-container p {
@@ -58,17 +63,16 @@
     opacity: 1 !important;
   }
   section.prices article.prices div.content-container div.big {
-    padding-bottom: 16px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    padding: 0 32px;
-    gap: 8px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    margin-top: 32px;
   }
   section.prices article.prices div.content-container div.big div.price-card {
+    width: 100%;
+    margin-bottom: 8px !important;
     padding-bottom: 248px;
   }
   section.prices article.prices div.content-container div.big div.price-card::before {

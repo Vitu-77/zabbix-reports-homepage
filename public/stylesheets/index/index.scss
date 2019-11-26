@@ -453,7 +453,7 @@ section.prices{
 
                     //transition-property
                     // margin-top: -30px;
-                    transform: translateX(20%);
+                    // transform: translateX(20%);
                     opacity: 0;
 
                     p{
@@ -461,7 +461,7 @@ section.prices{
                         text-align: start;
                         font-size: 17px;
                         color: white;
-                        font-weight: 300;
+                        font-weight: 400;
                     }
                 }
                 div.button-container{
@@ -469,7 +469,7 @@ section.prices{
                     
                     //transition-property
                     opacity: 0;
-                    transform: translateX(30px);
+                    // transform: translateX(30px);
 
                     a{
                         position: relative;
@@ -530,6 +530,7 @@ section.videos{
             text-align: center;
 
             iframe{
+                z-index: 10;
                 width: 100%;
                 height: 500px;
 
@@ -555,6 +556,9 @@ div.getting-started{
             font-size: 32px;
             font-weight: 700;
             color: $secondary-grey;
+
+            margin-bottom: 15px;
+            opacity: 0;
         }
     }
 
@@ -577,6 +581,9 @@ div.getting-started{
                 left: 50%;
                 transform: translateX(-50%);
                 max-width: 500px;
+
+                margin-bottom: -50%;
+                opacity: 0;
             }
         }
 
@@ -587,6 +594,9 @@ div.getting-started{
             flex-direction: column;
             align-self: center;
             justify-content: flex-start;
+
+            opacity: 0;
+            margin-bottom: .30px;
 
             h3{
                 font-size: 20px;
@@ -621,12 +631,13 @@ section.contact{
 
             flex: .4;
 
-            //trasition-property
-            transform: translateX(-800%);
-
             h2{
                 font-size: 32px;
                 color: $secondary-blue;
+
+                //trasition-property
+                margin-left: -50px;
+                opacity: 0;
             }
 
             div.dropdown{
@@ -639,6 +650,10 @@ section.contact{
                     padding: 8px 8px 0px 4px;
                     border-bottom: 0.5px solid rgb(207, 207, 207);
                     cursor: pointer;
+
+                    //trasition-property
+                    margin-left: -40px;
+                    opacity: 0;
 
                     &:last-child{
                         border-bottom: none !important;
@@ -747,8 +762,9 @@ section.contact{
             h2{
                 font-size: 32px;
                 color: $secondary-blue;
-
+                
                 //trasition-property
+                margin-left: 30px;
                 opacity: 0;
             }
 

@@ -11,9 +11,11 @@ const animate = () => {
     const videos = get('section#video');
     const videosOffsetTop = Math.floor(videos.offsetTop * 0.76);
 
-    const contact = get('section#contact');
-    const contactOffsetTop = Math.floor(contact.offsetTop * 0.8);
+    const gettingStarted = get('div#getting-started');
+    const gettingStartedOffsetTop = Math.floor(gettingStarted.offsetTop * 0.85);
 
+    const contact = get('section#contact');
+    const contactOffsetTop = Math.floor(contact.offsetTop * 0.9);
 
     // features-animation
     if (window.scrollY >= featuresOffsetTop) {
@@ -55,14 +57,12 @@ const animate = () => {
 
         const pricesTimeline = new TimelineMax();
 
-        console.log(texts);
-
         pricesTimeline
-            .to(startFree, 1, {
+            .to(startFree, .6, {
                 opacity: 1,
                 marginLeft: 0
             })
-            .to(payOnly, .4, {
+            .to(payOnly, .6, {
                 opacity: 1,
                 marginLeft: 0
             })
@@ -81,17 +81,12 @@ const animate = () => {
             .to(texts[0], .4, {
                 transform: 'translateX(0)',
                 opacity: 1,
-                ease: Back.easeOut.config(1.7), x: -15
             })
             .to(texts[1], .4, {
-                transform: 'translateX(0)',
                 opacity: 1,
-                ease: Back.easeOut.config(1.7), x: -15
             })
             .to(texts[2], .6, {
-                transform: 'translateX(0)',
                 opacity: 1,
-                ease: Back.easeOut.config(1.7), x: -15
             })
     }
 
@@ -110,21 +105,65 @@ const animate = () => {
             .to(video, .8, { opacity: 1 })
     }
 
+    //gettingStarted-animation
+    if (window.scrollY >= gettingStartedOffsetTop){
+        const rocket = get('#rocket');
+        const subTitle = get('.getting-started .subtitle-container h2');
+        const text = get('.getting-started .content .content-right');
+
+        const gettingStartedTimeline = new TimelineMax();
+
+        gettingStartedTimeline
+            .to(rocket, .6, {
+                marginBottom: 0,
+                opacity: 1
+            })
+            .to(subTitle, .4, {
+                marginBottom: 0,
+                opacity: 1,
+            })
+            .to(text, .8, {
+                opacity: 1,
+                marginBottom: 0
+            })
+    }
+
+    //contact-animation
     if (window.scrollY >= contactOffsetTop) {
-        const faq = get('article.faq');
-        const form = get('.contact-form form');
+        const faqTitle = get('article.faq h2');
+        const dropdownItems = getAll('article.faq div.dropdown div.row');
+    
         const formTitle = get('.contact-form h2');
+        const form = get('.contact-form form');
         const formSubtitle = get('.contact-form h3');
         const formButton = get('.contact-form button');
 
         const contactTimeline = new TimelineMax();
 
         contactTimeline
-            .to(faq, .6, { transform: 'translateX: (0)' })
-            .to(formTitle, .4, { opacity: 1 })
+            .to(faqTitle, .4, { 
+                marginLeft: 0,
+                opacity: 1
+            })
+            .to(dropdownItems[0], .3, {
+                marginLeft: 0,
+                opacity: 1
+            })
+            .to(dropdownItems[1], .3, {
+                marginLeft: 0,
+                opacity: 1
+            })
+            .to(dropdownItems[2], .3, {
+                marginLeft: 0,
+                opacity: 1
+            })
+            .to(formTitle, .4, { 
+                opacity: 1,
+                marginLeft: 0
+            })
             .to(formSubtitle, .4, { opacity: 1 })
-            .to(form, .4, { opacity: 1 })
-            .to(formButton, .4, { opacity: 1 })
+            .to(form, .2, { opacity: 1 })
+            .to(formButton, .1, { opacity: 1 })
     }
 }
 

@@ -23,3 +23,16 @@ for (let i = 0; i < navLinks.length; i++) {
 
     setSmoothScroll(navLinks[i], sectionsPositions[sectionIterator]);
 }
+
+const gsLink = document.querySelector('#gs-link');
+
+gsLink.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const targetOffsetTop = document.querySelector('#getting-started').offsetTop;
+
+    window.scrollTo({
+        top: targetOffsetTop * 0.97,
+        behavior: 'smooth',
+    });
+})

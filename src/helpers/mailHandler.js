@@ -34,7 +34,7 @@ module.exports = {
             requireTLS: true,
             auth: {
                 user: 'marcelo.victor05@gmail.com', // sender mail user
-                pass: 'arsenalvic' // sender mail password
+                pass: process.env.EMAIL_PASSWORD // sender mail password
             }
         });
 
