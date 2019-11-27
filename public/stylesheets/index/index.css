@@ -637,9 +637,12 @@ section.videos div.subtitle-container h2 {
   opacity: 0;
 }
 
+section.videos article.demo-video {
+  padding-bottom: 32px;
+}
+
 section.videos article.demo-video div.video-container {
   width: 100%;
-  padding-bottom: 32px;
   text-align: center;
 }
 
@@ -647,7 +650,25 @@ section.videos article.demo-video div.video-container iframe {
   z-index: 10;
   width: 100%;
   height: 500px;
+  padding-bottom: 16px;
   opacity: 0;
+}
+
+section.videos article.demo-video div.video-container a {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  -webkit-transition: 280ms;
+  transition: 280ms;
+  font-style: italic;
+  border-bottom: 1px solid #fff;
+}
+
+section.videos article.demo-video div.video-container a:hover {
+  color: #dedede;
+  border-color: #dedede;
 }
 
 div.getting-started {

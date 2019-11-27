@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const consolidate = require('consolidate');
+const compression = require('compression');
 const dotEnv = require('dotenv').config();
 
 const indexRoute = require('./src/routes/index');
@@ -15,6 +16,7 @@ app.engine('html', consolidate.swig);
 app.set('views', path.join(__dirname, 'src', 'views'));
 app.set('view engine', 'html');
 
+app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(logger('dev'));
