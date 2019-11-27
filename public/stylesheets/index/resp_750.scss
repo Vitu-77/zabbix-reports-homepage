@@ -33,11 +33,18 @@ $transition-duration: 280ms;
                 right: 32px;
                 transform: translateY(-50%);
 
+                &:hover{
+                    & > div{
+                        background: $secondary-blue;
+                    }
+                }
+
                 div{
                     border-radius: 25px;
                     width: 100%;
                     height: 6px;
-                    background: #727176;
+                    background: $primary-blue;
+                    transition: $transition-duration;
                 }
             }
 
@@ -59,12 +66,14 @@ $transition-duration: 280ms;
             
                     li{
                         a{
-                            font-size: 20px;
-                            color: #000000;
+                            font-size: 16px;
+                            color: $secondary-blue;
                             font-weight: 600;
-                            padding: 40px 0;
-                            width: 100%;
-                            text-align: center;
+                            transition: $transition-duration;
+
+                            &:hover{
+                                color: $primary-blue;
+                            }
                         }
             
                         &:first-child{
@@ -74,12 +83,20 @@ $transition-duration: 280ms;
                         }
                         &:last-child{
                             a{
-                                font-weight: 700;
-                                padding: 8px 16px !important;
-                                border-radius: 20px;
-                                border: 2px solid #000000;
+                                font-size: 16px;
+                                color: $primary-blue !important;
+                                border-color: $primary-blue !important;
+                                font-weight: 600;
+                                transition: $transition-duration;
                                 width: 80%;
+                                text-align: center;
+
+                                &:hover{
+                                    color: white !important;
+                                    background: $primary-blue;
+                                }
                             }
+
                         }
                     }
                 }
@@ -151,16 +168,19 @@ $transition-duration: 280ms;
         }
     
         div.feature-cards{
-            margin-top: -90px;
             article{
 
                 transform: translateX(0) !important;
                 opacity: 1 !important;
 
                 div.feature-card-img{
+                    background: #BAB9BB;
+                    padding: 50px;
+                    margin-bottom: 16px;
+                    border-radius: 50%;
                     img{
-                        width: 200px;
-                        height: 200px;
+                        width: 90px;
+                        height: 90px;
                     }
                 }
     

@@ -345,12 +345,16 @@ section.features div.feature-cards article:nth-child(4) {
   opacity: 0;
 }
 
+section.features div.feature-cards article div.feature-card-img {
+  background: #BAB9BB;
+  padding: 50px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+}
+
 section.features div.feature-cards article div.feature-card-img img {
-  width: 241px;
-  height: 241px;
-  padding: 30px;
-  background: #ccc;
-  border-radius: 100%;
+  width: 90px;
+  height: 90px;
 }
 
 section.features div.feature-cards article div.text-container h3 {

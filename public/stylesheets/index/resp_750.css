@@ -33,11 +33,16 @@
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
+  section.home header .show-mobile-menu-icon:hover > div {
+    background: #005E72;
+  }
   section.home header .show-mobile-menu-icon div {
     border-radius: 25px;
     width: 100%;
     height: 6px;
-    background: #727176;
+    background: #00AAC4;
+    -webkit-transition: 280ms;
+    transition: 280ms;
   }
   section.home header nav.mobile-menu {
     display: block;
@@ -67,22 +72,31 @@
             box-shadow: -2px 0 10px 1px rgba(59, 59, 59, 0.134);
   }
   section.home header nav.mobile-menu ul li a {
-    font-size: 20px;
-    color: #000000;
+    font-size: 16px;
+    color: #005E72;
     font-weight: 600;
-    padding: 40px 0;
-    width: 100%;
-    text-align: center;
+    -webkit-transition: 280ms;
+    transition: 280ms;
+  }
+  section.home header nav.mobile-menu ul li a:hover {
+    color: #00AAC4;
   }
   section.home header nav.mobile-menu ul li:first-child a {
     margin-top: -40px;
   }
   section.home header nav.mobile-menu ul li:last-child a {
-    font-weight: 700;
-    padding: 8px 16px !important;
-    border-radius: 20px;
-    border: 2px solid #000000;
+    font-size: 16px;
+    color: #00AAC4 !important;
+    border-color: #00AAC4 !important;
+    font-weight: 600;
+    -webkit-transition: 280ms;
+    transition: 280ms;
     width: 80%;
+    text-align: center;
+  }
+  section.home header nav.mobile-menu ul li:last-child a:hover {
+    color: white !important;
+    background: #00AAC4;
   }
   section.home header .hide-menu {
     display: block;
@@ -141,17 +155,20 @@
     -webkit-transform: translateX(0) !important;
             transform: translateX(0) !important;
   }
-  section.features div.feature-cards {
-    margin-top: -90px;
-  }
   section.features div.feature-cards article {
     -webkit-transform: translateX(0) !important;
             transform: translateX(0) !important;
     opacity: 1 !important;
   }
+  section.features div.feature-cards article div.feature-card-img {
+    background: #BAB9BB;
+    padding: 50px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+  }
   section.features div.feature-cards article div.feature-card-img img {
-    width: 200px;
-    height: 200px;
+    width: 90px;
+    height: 90px;
   }
   section.features div.feature-cards article div.text-container h3 {
     font-size: 17px;

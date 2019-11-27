@@ -31,9 +31,15 @@
   section.features div.feature-cards {
     margin: 0 0 32px 0;
   }
+  section.features div.feature-cards article div.feature-card-img {
+    background: #BAB9BB;
+    padding: 50px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+  }
   section.features div.feature-cards article div.feature-card-img img {
-    width: 248px;
-    height: 248px;
+    width: 90px;
+    height: 90px;
   }
   section.features div.feature-cards article div.text-container h3 {
     font-size: 19px;
