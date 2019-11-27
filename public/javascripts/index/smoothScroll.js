@@ -25,6 +25,7 @@ for (let i = 0; i < navLinks.length; i++) {
 }
 
 const gsLink = document.querySelector('#gs-link');
+const faqLnk = document.querySelector('#faqLnk');
 
 gsLink.addEventListener('click', (e) => {
     e.preventDefault();
@@ -36,3 +37,14 @@ gsLink.addEventListener('click', (e) => {
         behavior: 'smooth',
     });
 })
+
+faqLnk.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const targetOffsetTop = document.querySelector('#prices').offsetTop;
+
+    window.scrollTo({
+        top: targetOffsetTop * 0.97,
+        behavior: 'smooth',
+    });
+});

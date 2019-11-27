@@ -603,6 +603,10 @@ section.prices article.prices div.content-container div.big div.price-card div.c
   text-align: center;
 }
 
+section.prices article.prices div.content-container div.big div.price-card div.content .list-center span:first-child {
+  margin-top: -16px;
+}
+
 section.prices article.prices div.content-container div.big div.price-card div.content h3.content-title {
   color: black;
   font-size: 18px;
@@ -1005,14 +1009,21 @@ section.contact div.contact-content article.faq div.dropdown div.row > div.dropd
   position: relative;
   padding: 8px;
   color: #545F63;
-  background: #BAB9BB;
+  background: rgba(186, 185, 187, 0.521);
   width: 100%;
-  border-bottom: 1px solid #9c9c9c;
+}
+
+section.contact div.contact-content article.faq div.dropdown div.row > div.dropdown-items span a {
+  color: #545F63 !important;
+}
+
+section.contact div.contact-content article.faq div.dropdown div.row > div.dropdown-items span a:hover {
+  text-decoration: underline;
 }
 
 section.contact div.contact-content article.faq div.dropdown div.row > div.dropdown-items span:hover {
-  color: #00AAC4;
-  cursor: default;
+  color: #545F63 !important;
+  cursor: default !important;
 }
 
 section.contact div.contact-content article.faq div.dropdown div.row .hide-dropdown {

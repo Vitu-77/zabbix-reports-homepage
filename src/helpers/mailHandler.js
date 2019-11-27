@@ -40,7 +40,7 @@ module.exports = {
 
         const mailOptions = {
             from: process.env.EMAIL_SENDER,
-            to: EMAIL_RECIP,
+            to: process.env.EMAIL_RECEIVER,
             subject: `Zabbix Reports possui uma nova pergunta!`,
             html: mail
         };
