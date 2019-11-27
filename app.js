@@ -5,12 +5,15 @@ const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const consolidate = require('consolidate');
 const compression = require('compression');
-const dotEnv = require('dotenv').config();
+
+require('dotenv').config();
 
 const indexRoute = require('./src/routes/index');
 const messageReceivedRoute = require('./src/routes/messageReceived');
 
 const app = express();
+
+console.log(process.env);
 
 app.engine('html', consolidate.swig);
 app.set('views', path.join(__dirname, 'src', 'views'));
