@@ -13,8 +13,6 @@ const messageReceivedRoute = require('./src/routes/messageReceived');
 
 const app = express();
 
-console.log(process.env);
-
 app.engine('html', consolidate.swig);
 app.set('views', path.join(__dirname, 'src', 'views'));
 app.set('view engine', 'html');

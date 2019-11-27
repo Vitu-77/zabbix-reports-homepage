@@ -33,14 +33,14 @@ module.exports = {
             secure: false,
             requireTLS: true,
             auth: {
-                user: 'process.env.EMAIL_SENDER',
-                pass: 'process.env.EMAIL_PASSWORD'
+                user: process.env.EMAIL_SENDER,
+                pass: process.env.EMAIL_PASSWORD
             }
         });
 
         const mailOptions = {
-            from: 'process.env.EMAIL_SENDER',
-            to: 'process.env.EMAIL_RECEIVER',
+            from: process.env.EMAIL_SENDER,
+            to: process.env.EMAIL_RECEIVER,
             subject: `Zabbix Reports possui uma nova pergunta!`,
             html: mail
         };

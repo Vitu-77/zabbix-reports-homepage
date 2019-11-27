@@ -2,7 +2,7 @@ const app = require('../app');
 const debug = require('debug')('zabbix-reports-homepage:server');
 const http = require('http');
 
-const port = normalizePort('3000');
+const port = normalizePort(process.env.PORT || '3000');
 
 app.set('port', port);
 
