@@ -4,8 +4,6 @@ module.exports = {
     async index(req, res) {
         const { name, email, message } = req.body;
 
-        //calling mailHandler
-
         const mail = mailHandler.generateEmail(name, email, message);
 
         await mailHandler.sendMail(mail);

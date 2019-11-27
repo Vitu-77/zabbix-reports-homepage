@@ -1,6 +1,6 @@
 const express = require('express');
 const messageReceivedRoute = express.Router();
-const messageReceivedController = require('../controllers/MessageReceivedController');
+const messageReceivedController = require('../controllers/messageReceivedController');
 
 messageReceivedRoute.post('/message-sended', messageReceivedController.index);
 messageReceivedRoute.get('/message-received', messageReceivedController.sucess);
