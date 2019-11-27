@@ -74,9 +74,9 @@
   }
   section.prices article.prices div.content-container {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 0;
   }
   section.prices article.prices div.content-container div.small {
@@ -117,7 +117,6 @@
     width: 35%;
   }
   section.prices article.prices div.content-container div.big {
-    margin-top: 84px;
     width: 100%;
     padding-bottom: 32px;
   }
@@ -146,17 +145,25 @@
   div.getting-started div.subtitle-container h2 {
     font-size: 26px;
     margin: 16px 0;
+    margin-bottom: 0 !important;
+    opacity: 1 !important;
   }
   div.getting-started div.content div.content-left {
     -webkit-box-flex: .60;
         -ms-flex: .60;
             flex: .60;
   }
+  div.getting-started div.content div.content-left img {
+    margin-bottom: 0%;
+    opacity: 1;
+  }
   div.getting-started div.content div.content-right {
     -webkit-box-flex: .40;
         -ms-flex: .40;
             flex: .40;
     padding-left: 16px;
+    opacity: 1 !important;
+    margin-bottom: 0px !important;
   }
   div.getting-started div.content div.content-right h3 {
     font-size: 19px;
@@ -183,8 +190,14 @@
             flex: 1;
     width: 100%;
     margin-bottom: 32px;
-    -webkit-transform: translateX(0) !important;
-            transform: translateX(0) !important;
+  }
+  section.contact div.contact-content article.faq h2 {
+    margin-left: 0 !important;
+    opacity: 1 !important;
+  }
+  section.contact div.contact-content article.faq div.dropdown div.row {
+    margin-left: 0 !important;
+    opacity: 1 !important;
   }
   section.contact div.contact-content article.faq div.dropdown div.row header h4 {
     font-size: 18px;
@@ -196,6 +209,7 @@
     width: 100%;
   }
   section.contact div.contact-content article.contact-form h2 {
+    margin-left: 0 !important;
     opacity: 1 !important;
   }
   section.contact div.contact-content article.contact-form h3 {

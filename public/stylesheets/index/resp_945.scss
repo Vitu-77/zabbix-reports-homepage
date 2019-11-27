@@ -122,7 +122,7 @@
 
             div.content-container{
 
-                flex-direction: column-reverse;
+                flex-direction: column;
                 margin-top: 0;
     
                 div.small{
@@ -167,7 +167,6 @@
                 }
 
                 div.big{
-                    margin-top: 84px;
                     width: 100%;
                     padding-bottom: 32px;
 
@@ -214,6 +213,10 @@
             h2{
                 font-size: 26px;
                 margin: 16px 0;
+
+                //transition-property
+                margin-bottom: 0 !important;
+                opacity: 1 !important;
             }
         }
     
@@ -221,12 +224,22 @@
         div.content{    
             div.content-left{
                 flex: .60;
+
+                img{
+                    //transition-property
+                    margin-bottom: 0%;
+                    opacity: 1;
+                }
             }
 
             div.content-right{
                 
                 flex: .40;
                 padding-left: 16px;
+
+                //transition-property
+                opacity: 1 !important;
+                margin-bottom: 0px !important;
     
                 h3{
                     font-size: 19px;
@@ -258,11 +271,19 @@
                 width: 100%;
                 margin-bottom: 32px;
 
-                //trasition-property
-                transform: translateX(0) !important;
+                h2{
+                    //trasition-property
+                    margin-left: 0 !important;
+                    opacity: 1 !important;
+                }
 
                 div.dropdown{
                     div.row{    
+
+                        //trasition-property
+                        margin-left: 0 !important;
+                        opacity: 1 !important;
+                        
                         header{
                             h4{
                                 font-size: 18px;
@@ -277,7 +298,8 @@
 
                 h2{
                     //trasition-property
-                    opacity: 1 !important;
+                        margin-left: 0 !important;
+                        opacity: 1 !important;
                 }
     
                 h3{

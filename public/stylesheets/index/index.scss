@@ -18,6 +18,11 @@ $transition-duration: 280ms;
         color: white;
         background: $primary-blue;
     }
+
+    .selected-card{
+        background: #fff;
+        transform: scale(1.05);
+    }
     
     a{
         text-decoration: none;
@@ -378,33 +383,40 @@ section.prices{
                     align-items: center;
                     justify-content: space-between;
                     padding-bottom: 250px;
+                    position: relative;
+                    transition: $transition-duration;
+
+                    &:hover{
+                        cursor: pointer;
+                        background: #fff;
+                        transform: scale(1.05);
+                    }
+
+                    &::before{
+                        content: '';
+                        background: #fff;
+                        border-left: 4px solid #fff;
+                        border-right: 4px solid #fff;
+                        position: absolute;
+                        width: 100%;
+                        height: 10%;
+                        top: -10%;
+                        left: -4px;
+                        opacity: 0;
+                        transition: $transition-duration;
+                    }
 
                     &:nth-child(1){
-                        background: $primary-blue;
                         margin-bottom: -30px;
                         opacity: 0;
                     }
                     &:nth-child(2){
-                        background: #fff;
-                        position: relative;
-
                         margin-bottom: -20px;
                         opacity: 0;
-
-                        &::before{
-                            content: '';
-                            background: #fff;
-                            border-left: 8px solid #fff;
-                            border-right: 8px solid #fff;
-                            position: absolute;
-                            width: 100%;
-                            height: 10%;
-                            top: -10%;
-                            left: -8px;
-                        }
+                        border-right: none;
+                        border-left: none;
                     }
                     &:nth-child(3){
-                        background: $primary-blue;
                         margin-bottom: -30px;
                         opacity: 0;
                     }
@@ -417,6 +429,7 @@ section.prices{
                     }
 
                     div.content{
+                        pointer-events: none;
                         margin-top: 8px;
                         display: flex;
                         flex-direction: column;
@@ -557,6 +570,7 @@ div.getting-started{
             font-weight: 700;
             color: $secondary-grey;
 
+            //transition-property
             margin-bottom: 15px;
             opacity: 0;
         }
@@ -582,6 +596,7 @@ div.getting-started{
                 transform: translateX(-50%);
                 max-width: 500px;
 
+                //transition-property
                 margin-bottom: -50%;
                 opacity: 0;
             }

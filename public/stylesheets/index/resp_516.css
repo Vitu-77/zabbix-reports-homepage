@@ -68,12 +68,15 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 80%;
-    margin-top: 32px;
   }
   section.prices article.prices div.content-container div.big div.price-card {
     width: 100%;
     margin-bottom: 8px !important;
     padding-bottom: 248px;
+  }
+  section.prices article.prices div.content-container div.big div.price-card:nth-child(2) {
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
   }
   section.prices article.prices div.content-container div.big div.price-card::before {
     display: none;

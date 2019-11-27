@@ -101,12 +101,16 @@
                 div.big{
                     flex-direction: column;
                     width: 80%;
-                    margin-top: 32px;
 
                     div.price-card{
                         width: 100%;
                         margin-bottom: 8px !important;
                         padding-bottom: 248px;
+
+                        &:nth-child(2){
+                            border-left: 4px solid #fff;
+                            border-right: 4px solid #fff;
+                        }
 
                         &::before{
                             display: none;
