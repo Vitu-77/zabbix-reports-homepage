@@ -101,12 +101,13 @@
             div.content-container{
                 div.big{
                     flex-direction: column;
-                    width: 80%;
+                    width: 70%;
 
                     div.price-card{
+                        padding: 16px 0 !important;
                         width: 100%;
                         margin-bottom: 8px !important;
-                        padding-bottom: 248px;
+                        min-height: 380px;
 
                         &:nth-child(2){
                             border-left: 4px solid #fff;
@@ -151,8 +152,9 @@
             }
 
             div.video-container{
-                video{
-                    transform: scale(1.15);
+                iframe{
+                    width: 343px;
+                    height: 210px;
                 }
             }
         }

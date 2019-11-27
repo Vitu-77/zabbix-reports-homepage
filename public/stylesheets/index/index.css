@@ -16,12 +16,6 @@
   background: #00AAC4;
 }
 
-* .selected-card {
-  background: #fff;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
 * a {
   text-decoration: none;
 }
@@ -290,6 +284,7 @@ section.features div.subtitle-container h2 {
   text-align: center;
   font-weight: 700;
   font-size: 32px;
+  color: #545F63;
   margin-left: -300px;
   opacity: 0;
 }
@@ -444,9 +439,20 @@ section.prices article.prices div.content-container div.big {
           justify-content: center;
 }
 
+section.prices article.prices div.content-container div.big .selected-card {
+  background: #fff !important;
+  color: black !important;
+  -webkit-transform: scale(1.05) !important;
+          transform: scale(1.05) !important;
+  border-color: black !important;
+  z-index: 900 !important;
+}
+
 section.prices article.prices div.content-container div.big div.price-card {
   width: 30%;
-  border: 4px solid #fff;
+  margin: 0 2px;
+  background: #fff;
+  border: 2px solid transparent;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,35 +464,20 @@ section.prices article.prices div.content-container div.big div.price-card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 250px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 450px;
   position: relative;
   -webkit-transition: 280ms;
   transition: 280ms;
+  cursor: pointer;
 }
 
 section.prices article.prices div.content-container div.big div.price-card:hover {
-  cursor: pointer;
-  background: #fff;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-}
-
-section.prices article.prices div.content-container div.big div.price-card::before {
-  content: '';
-  background: #fff;
-  border-left: 4px solid #fff;
-  border-right: 4px solid #fff;
-  position: absolute;
-  width: 100%;
-  height: 10%;
-  top: -10%;
-  left: -4px;
-  opacity: 0;
-  -webkit-transition: 280ms;
-  transition: 280ms;
+  z-index: 1000;
 }
 
 section.prices article.prices div.content-container div.big div.price-card:nth-child(1) {
@@ -497,8 +488,6 @@ section.prices article.prices div.content-container div.big div.price-card:nth-c
 section.prices article.prices div.content-container div.big div.price-card:nth-child(2) {
   margin-bottom: -20px;
   opacity: 0;
-  border-right: none;
-  border-left: none;
 }
 
 section.prices article.prices div.content-container div.big div.price-card:nth-child(3) {
@@ -508,15 +497,55 @@ section.prices article.prices div.content-container div.big div.price-card:nth-c
 
 section.prices article.prices div.content-container div.big div.price-card header {
   padding: 8px 0;
+  margin-top: 16px;
 }
 
 section.prices article.prices div.content-container div.big div.price-card header h4 {
   text-align: center !important;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.btn-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 16px;
+  padding-bottom: 16px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.btn-container button {
+  background: transparent;
+  border-color: black;
+  color: 2px solid black;
+  padding: 8px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: 280ms;
+  transition: 280ms;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.btn-container button:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
 }
 
 section.prices article.prices div.content-container div.big div.price-card div.content {
-  pointer-events: none;
+  padding: 8px 16px;
   margin-top: 8px;
+  pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,9 +556,71 @@ section.prices article.prices div.content-container div.big div.price-card div.c
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.content .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 16px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.content .list span {
+  font-size: 15px !important;
+  margin: 2px 0;
+  margin-left: -8px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.content .list-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.content .list-center span {
+  font-size: 17px !important;
+  font-weight: 500;
+  margin: 4px 0;
+  margin-left: -8px;
+  text-align: center;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.content h3.content-title {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: center;
+  -webkit-transition: 280ms;
+  transition: 280ms;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.content .content-p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #757E85;
+  color: black;
+  -webkit-transition: 280ms;
+  transition: 280ms;
 }
 
 section.prices article.prices div.content-container div.small {

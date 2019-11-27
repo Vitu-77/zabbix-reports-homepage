@@ -23,3 +23,7 @@ for(let i = 0; i < cards.length; i++){
         cards[i].classList.toggle('selected-card');
     });
 }
+
+const cardBtn = document.querySelector('.card-btn');
+
+cardBtn.addEventListener('click', () => console.log('ASXAASXASXASX'));

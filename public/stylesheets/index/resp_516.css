@@ -70,12 +70,13 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 80%;
+    width: 70%;
   }
   section.prices article.prices div.content-container div.big div.price-card {
+    padding: 16px 0 !important;
     width: 100%;
     margin-bottom: 8px !important;
-    padding-bottom: 248px;
+    min-height: 380px;
   }
   section.prices article.prices div.content-container div.big div.price-card:nth-child(2) {
     border-left: 4px solid #fff;
@@ -103,9 +104,9 @@
   section.videos article.demo-video div.subtitle-container br {
     display: none;
   }
-  section.videos article.demo-video div.video-container video {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+  section.videos article.demo-video div.video-container iframe {
+    width: 343px;
+    height: 210px;
   }
   div.getting-started {
     padding: 0 32px 0 32px;
