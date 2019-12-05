@@ -75,7 +75,7 @@ const animate = () => {
                 opacity: 1,
             })
             .to(priceCards[1], .5, {
-                marginBottom: 0,
+                marginBottom: '16px',
                 opacity: 1,
             })
             .to(texts[0], .4, {

@@ -6,6 +6,19 @@
           box-sizing: border-box;
 }
 
+* .span-value {
+  background: #D1D1D1 !important;
+  padding: 8px 16px !important;
+  margin-left: 4px !important;
+  font-weight: 600 !important;
+  color: #545F63;
+  border-radius: 20px;
+}
+
+* .__hide {
+  display: none !important;
+}
+
 *::-moz-selection {
   color: white;
   background: #00AAC4;
@@ -467,17 +480,10 @@ section.prices article.prices div.content-container div.big div.price-card {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  min-height: 450px;
+  min-height: 496px;
   position: relative;
   -webkit-transition: 280ms;
   transition: 280ms;
-  cursor: pointer;
-}
-
-section.prices article.prices div.content-container div.big div.price-card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  z-index: 1000;
 }
 
 section.prices article.prices div.content-container div.big div.price-card:nth-child(1) {
@@ -504,7 +510,11 @@ section.prices article.prices div.content-container div.big div.price-card heade
   text-align: center !important;
   font-size: 18px;
   text-transform: uppercase;
-  color: black;
+  color: #545F63;
+}
+
+section.prices article.prices div.content-container div.big div.price-card #customize-header {
+  color: #005E72;
 }
 
 section.prices article.prices div.content-container div.big div.price-card div.btn-container {
@@ -543,9 +553,6 @@ section.prices article.prices div.content-container div.big div.price-card div.b
 }
 
 section.prices article.prices div.content-container div.big div.price-card div.content {
-  padding: 8px 16px;
-  margin-top: 8px;
-  pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,32 +563,357 @@ section.prices article.prices div.content-container div.big div.price-card div.c
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.content h3, section.prices article.prices div.content-container div.big div.price-card div.content h4 {
+  text-align: center;
+  margin: 16px 8px;
+  color: #005E72;
+  font-size: 16px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.content h4 {
+  font-weight: 400;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.counter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 32px 8px 16px 0;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  max-width: 100%;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.counter-container span {
+  font-weight: 600;
+  margin-right: 4px;
+  color: #545F63;
+  font-size: 16px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.counter-container input {
+  margin-left: 4px;
+  width: 72px;
+  background: #D1D1D1;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  padding: 8px 0px;
+  color: #545F63;
+  font-weight: 600;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.counter-container input:focus {
+  outline: none !important;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.contrat-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-top: 16px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.contrat-container span {
+  color: #545F63;
+  font-size: 16px;
+  margin-right: 4px;
+  font-weight: 600;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.contrat-container span.off {
+  position: absolute;
+  font-size: 8px;
+  color: #00AAC4;
+  font-weight: 900 !important;
+  top: 40%;
+  left: 71%;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.contrat-container select {
+  width: 134px;
+  padding: 8px 0 8px 15px;
+  background: #D1D1D1;
+  border: none;
+  border-radius: 20px;
+  color: #545F63;
+  font-weight: 600 !important;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.contrat-container select:focus {
+  outline: 0 !important;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.contrat-container input {
+  width: 134px;
+  padding: 8px 0 8px 15px;
+  background: #D1D1D1;
+  border: none;
+  border-radius: 20px;
+  color: #545F63;
+  font-weight: 600 !important;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.contrat-container input:focus {
+  outline: none !important;
+}
+
+section.prices article.prices div.content-container div.big div.price-card .custom-contract {
+  margin: 16px 0 16px 0 !important;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.total-price-container {
+  width: 100%;
+  margin: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.total-price-container span:nth-child(1) {
+  color: #545F63;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 2px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.total-price-container span:nth-child(2) {
+  color: #545F63;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.btn-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 16px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.btn-container a {
+  background: #00AAC4;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  width: 72px;
+  height: 32px;
+  -webkit-transition: 280ms;
+  transition: 280ms;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.btn-container a:hover {
+  background: #005E72;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.btn-container a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.6);
+          transform: translate(-50%, -50%) scale(0.6);
+  pointer-events: none;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.multiple-counter-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  width: 100%;
+  gap: 8px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.multiple-counter-container .__left {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 20px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.multiple-counter-container .__right {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
-section.prices article.prices div.content-container div.big div.price-card div.content .list {
+section.prices article.prices div.content-container div.big div.price-card div.multiple-counter-container .__right span {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #545F63;
+  border-radius: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.multiple-counter-container .__right span span.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 56%;
+  height: 56%;
+  background: #00AAC4;
+  border: none !important;
+  pointer-events: none;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.multiple-counter-container > div.counter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.multiple-counter-container > div.counter span {
+  font-weight: 600;
+  margin-right: 4px;
+  color: #545F63;
+  font-size: 14px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.multiple-counter-container > div.counter input {
+  margin-left: 4px;
+  max-width: 32px;
+  background: #D1D1D1;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  padding: 8px 0 8px 12px;
+  color: #545F63;
+  font-weight: 600;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.multiple-counter-container > div.counter input:focus {
+  outline: none !important;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.price-container {
+  margin: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-right: 36.234px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.price-container span:nth-child(1) {
+  color: #545F63;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 2px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.price-container span:nth-child(2) {
+  color: #545F63;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.price-container span.month {
+  position: absolute;
+  margin-left: 2px;
+  top: 40%;
+  left: 100%;
+  font-size: 8px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.vhost-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
   margin-top: 16px;
+  pointer-events: none;
 }
 
-section.prices article.prices div.content-container div.big div.price-card div.content .list span {
-  font-size: 15px !important;
-  margin: 2px 0;
-  margin-left: -8px;
+section.prices article.prices div.content-container div.big div.price-card div.vhost-container div.vhost {
+  padding: 6px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid #545F63;
+  border-radius: 50px;
 }
 
-section.prices article.prices div.content-container div.big div.price-card div.content .list-center {
+section.prices article.prices div.content-container div.big div.price-card div.vhost-container div.vhost span:nth-child(1) {
+  font-weight: 600;
+  font-size: 15px;
+  color: #545F63;
+  margin-right: 2px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.vhost-container div.vhost span:nth-child(2) {
+  font-weight: 600;
+  font-size: 15px;
+  color: #00AAC4;
+  text-transform: uppercase;
+  margin-left: 2px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.reseller-attributes {
+  width: 100%;
+  padding: 16px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,39 +924,47 @@ section.prices article.prices div.content-container div.big div.price-card div.c
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -32px;
 }
 
-section.prices article.prices div.content-container div.big div.price-card div.content .list-center span {
-  font-size: 17px !important;
-  font-weight: 500;
+section.prices article.prices div.content-container div.big div.price-card div.reseller-attributes div.reseller-counter {
   margin: 4px 0;
-  margin-left: -8px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-section.prices article.prices div.content-container div.big div.price-card div.content .list-center span:first-child {
-  margin-top: -16px;
-}
-
-section.prices article.prices div.content-container div.big div.price-card div.content h3.content-title {
-  color: black;
-  font-size: 18px;
+section.prices article.prices div.content-container div.big div.price-card div.reseller-attributes div.reseller-counter span {
+  color: #545F63;
   font-weight: 600;
-  margin-bottom: 8px;
-  text-align: center;
-  -webkit-transition: 280ms;
-  transition: 280ms;
 }
 
-section.prices article.prices div.content-container div.big div.price-card div.content .content-p {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  color: #757E85;
-  color: black;
-  -webkit-transition: 280ms;
-  transition: 280ms;
+section.prices article.prices div.content-container div.big div.price-card div.reseller-attributes div.reseller-counter span:nth-child(1) {
+  margin-right: 4px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.reseller-attributes div.reseller-counter span:nth-child(2) {
+  margin-left: 4px;
+  padding: 8px;
+  background: #D1D1D1;
+  border-radius: 50%;
+}
+
+section.prices article.prices div.content-container div.big div.price-card div.reseller-attributes div.reseller-counter img {
+  margin-left: 16px;
+}
+
+section.prices article.prices div.content-container div.big div.price-card #mt {
+  margin-top: 52px;
 }
 
 section.prices article.prices div.content-container div.small {

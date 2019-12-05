@@ -154,6 +154,7 @@
                 </div>
                 <div class="content-container">
                     <div class="big">
+                        <!-- alone card -->
                         <div class="price-card" id="alone">
                             <header>
                                 <h4>Alone</h4>
@@ -165,43 +166,136 @@
                                 <h4 class="content-p">For each additional report you need, you will get a 5% discount
                                     off the amount previously paid</h4>
                             </div>
+                            <div class="counter-container">
+                                <span>Reports</span>
+                                <input value="1" type="number" id="alone-input">
+                            </div>
+                            <div class="total-price-container" id="mt">
+                                <span>Total:</span>
+                                <span id="alone-price">$ 12</span>
+                            </div>
                             <div class="btn-container">
-                                <button class="card-btn">$ 50</button>
+                                <a href="#">
+                                    <img src="/images/icons/paypal.svg" alt="pay pal button">
+                                </a>
                             </div>
                         </div>
+                        <!-- custom card -->
                         <div class="price-card" id="customize">
                             <header>
-                                <h4>Customize</h4>
+                                <h4 id="customize-header">Customize</h4>
                             </header>
                             <div class="content">
                                 <h3 class="content-title">Create your own plan with your business needs</h3>
-                                <div class="list">
-                                    <h4>You can:</h4>
-                                    <span> - Save unlimited reports;</span>
-                                    <span> - Create unlimited templates;</span>
-                                    <span> - Save unlimited reports;</span>
-                                    <span> - vHost custom.</span>
+                            </div>
+                            <div class="counter-container">
+                                <span>Zabbix</span>
+                                <input value="1" type="number" id="zabbix-selector">
+                            </div>
+                            <div class="multiple-counter-container">
+                                <div class="counter __left">
+                                    <span>Models</span>
+                                    <span class="span-value" id="models-selector">1</span>
+                                </div>
+                                <div class="counter __right">
+                                    <span id="models-radio">
+                                        <span id="models-inner-radio" class="__hide inner"></span>
+                                    </span>
+                                    <img src="/images/icons/infinite.svg">
+                                </div>
+                                <div class="counter __left">
+                                    <span>Reports</span>
+                                    <span class="span-value" id="reports-selector">2</span>
+                                </div>
+                                <div class="counter __right">
+                                    <span id="reports-radio">
+                                        <span id="reports-inner-radio" class="__hide inner"></span>
+                                    </span>
+                                    <img src="/images/icons/infinite.svg">
+                                </div>
+                            </div>
+                            <div class="vhost-container __hide" id="hidden-vhost">
+                                <div class="vhost">
+                                    <span>vHost</span>
+                                    <span>FREE</span>
+                                </div>
+                            </div>
+                            <div class="contrat-container custom-contract">
+                                <span>Contract</span>
+                                <div class="input-box">
+                                    <span class="off">5% OFF</span>
+                                    <select>
+                                        <option value="3">3 months</option>
+                                        <option value="5">5 months</option>
+                                        <option value="12">1 year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <div class="total-price-container">
+                                    <span>Total:</span>
+                                    <span id="custom-price">$ 128.25</span>
+                                    <span class="month">monthly</span>
                                 </div>
                             </div>
                             <div class="btn-container">
-                                <button class="card-btn">Make your plan now!</button>
+                                <a href="#">
+                                    <img src="/images/icons/paypal.svg" alt="pay pal button">
+                                </a>
                             </div>
                         </div>
+                        <!-- reseller-card -->
                         <div class="price-card" id="reseller">
                             <header>
                                 <h4>Reseller</h4>
                             </header>
                             <div class="content">
-                                <div class="list-center">
-                                    <span>Start with 10 Zabbix</span>
-                                    <span>Unlimited Reporting Templates;</span>
-                                    <span>Save Unlimited Report;</span>
-                                    <span>Can create 2 users for each zabbix;</span>
-                                    <span>vHost custom.</span>
+                                <h3 class="content-title">Only one template can be created, you can insert a brand for
+                                    customization.
+                                </h3>
+                                <!-- <h4 class="content-p">If you want more than 10 Zabbix, <strong>contact us</strong></h4> -->
+                            </div>
+
+                            <div class="reseller-attributes">
+                                <div class="reseller-counter">
+                                    <span>Zabbix</span>
+                                    <span>10</span>
+                                </div>
+                                <div class="reseller-counter">
+                                    <span>Models</span>
+                                    <img src="/images/icons/infinite-blue.svg" />
+                                </div>
+                                <div class="reseller-counter">
+                                    <span>Reports</span>
+                                    <img src="/images/icons/infinite-blue.svg" />
+                                </div>
+                            </div>
+                            <div class="vhost-container" id="no-hidden-vhost">
+                                <div class="vhost">
+                                    <span>vHost</span>
+                                    <span>FREE</span>
+                                </div>
+                            </div>
+                            <div class="contrat-container">
+                                <span>Contract</span>
+                                <div class="input-box">
+                                    <span class="off">5% OFF</span>
+                                    <select>
+                                        <option value="12">1 year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <div class="total-price-container">
+                                    <span>Total:</span>
+                                    <span id="reseller-price">$1100</span>
+                                    <span class="month">monthly</span>
                                 </div>
                             </div>
                             <div class="btn-container">
-                                <button class="card-btn">Become a reseller!</button>
+                                <a href="#">
+                                    <img src="/images/icons/paypal.svg" alt="pay pal button">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -270,7 +364,9 @@
                                 </div>
                             </header>
                             <div class="dropdown-items hide-dropdown">
-                                <span>Zabbix is ​​a corporate monitoring solution that focuses on monitoring data from a wide range of equipment and hardware to help companies obtain or obtain maximum information about a particular service generated at the end of the business</span>
+                                <span>Zabbix is ​​a corporate monitoring solution that focuses on monitoring data from a
+                                    wide range of equipment and hardware to help companies obtain or obtain maximum
+                                    information about a particular service generated at the end of the business</span>
                             </div>
                         </div>
                         <div class="row">
@@ -283,7 +379,8 @@
                             </header>
                             <div class="dropdown-items hide-dropdown">
                                 <span>
-                                    It depends on the plan, you can choose yours by <strong><a id="faqLnk" href="#prices">clicking here</a></strong>
+                                    It depends on the plan, you can choose yours by <strong><a id="faqLnk"
+                                            href="#prices">clicking here</a></strong>
                                 </span>
                             </div>
                         </div>
