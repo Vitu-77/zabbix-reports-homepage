@@ -193,7 +193,7 @@
                                 <input value="1" type="number" id="zabbix-selector">
                             </div>
                             <div class="multiple-counter-container">
-                                <div class="counter __left">
+                                <div class="counter __left" id="mods">
                                     <span>Models</span>
                                     <span class="span-value" id="models-selector">1</span>
                                 </div>
@@ -203,7 +203,7 @@
                                     </span>
                                     <img src="/images/icons/infinite.svg">
                                 </div>
-                                <div class="counter __left">
+                                <div class="counter __left" id="reps">
                                     <span>Reports</span>
                                     <span class="span-value" id="reports-selector">2</span>
                                 </div>
@@ -223,10 +223,11 @@
                             <div class="contrat-container custom-contract">
                                 <span>Contract</span>
                                 <div class="input-box">
-                                    <span class="off">5% OFF</span>
-                                    <select>
+                                    <span class="off"></span>
+                                    <select id="custom-sel">
+                                        <option value="1">1 month</option>
                                         <option value="3">3 months</option>
-                                        <option value="5">5 months</option>
+                                        <option value="6">6 months</option>
                                         <option value="12">1 year</option>
                                     </select>
                                 </div>
@@ -279,8 +280,11 @@
                             <div class="contrat-container">
                                 <span>Contract</span>
                                 <div class="input-box">
-                                    <span class="off">5% OFF</span>
-                                    <select>
+                                    <span class="off" id="reseller-off"></span>
+                                    <select id="reseller-sel">
+                                        <option value="1">1 month</option>
+                                        <option value="3">3 months</option>
+                                        <option value="6">6 months</option>
                                         <option value="12">1 year</option>
                                     </select>
                                 </div>
