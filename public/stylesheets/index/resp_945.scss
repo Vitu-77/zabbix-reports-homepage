@@ -126,7 +126,7 @@
 
             div.content-container{
 
-                flex-direction: column;
+                flex-direction: column-reverse;
                 margin-top: 0;
     
                 div.small{
@@ -176,6 +176,7 @@
 
                     div.price-card{
                         //transition-property
+                        min-height: 510px !important;
                         margin-bottom: 0 !important;
                         opacity: 1 !important;
                     }

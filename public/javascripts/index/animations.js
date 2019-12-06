@@ -85,9 +85,6 @@ const animate = () => {
             .to(texts[1], .4, {
                 opacity: 1,
             })
-            .to(texts[2], .6, {
-                opacity: 1,
-            })
     }
 
     //videos-animation

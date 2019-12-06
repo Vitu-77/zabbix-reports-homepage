@@ -70,7 +70,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 70%;
+    width: 90%;
   }
   section.prices article.prices div.content-container div.big div.price-card {
     padding: 16px 0 !important;
