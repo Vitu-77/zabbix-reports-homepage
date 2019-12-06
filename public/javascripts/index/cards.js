@@ -5,7 +5,7 @@ const aloneInput = document.querySelector('#alone-input');
 
 aloneInput.addEventListener('change', (e) => {
     const prices = [12];
-    const innerHTMLprices = [];
+    const innerHTMLprices = [12];
 
     for (let i = 0; i < e.target.value; i++) {
         var newPrice = prices[i] * 0.95;
@@ -14,7 +14,7 @@ aloneInput.addEventListener('change', (e) => {
         innerHTMLprices.push(NEW_PRICE.toFixed(2));
     }
 
-    alonePrice.innerHTML = `$ ${innerHTMLprices[e.target.value - 2]}`;
+    alonePrice.innerHTML = `$ ${innerHTMLprices[e.target.value - 1]}`;   
 });
 
 // custom card
@@ -50,7 +50,7 @@ ZabbixSelector.addEventListener('change', (e) => {
     reportsSelector.innerHTML = ZabbixSelector.value * 2;
 
     const prices = [128.25];
-    const innerHTMLprices = [];
+    const innerHTMLprices = [128.25];
 
     for (let i = 0; i < e.target.value; i++) {
         var newPrice = prices[i] * 0.95;
@@ -59,7 +59,7 @@ ZabbixSelector.addEventListener('change', (e) => {
         innerHTMLprices.push(NEW_PRICE.toFixed(2));
     }
 
-    TOTAL_CUSTOM_PRICE = innerHTMLprices[e.target.value - 2];
+    TOTAL_CUSTOM_PRICE = innerHTMLprices[e.target.value - 1];
 
     REDUCED_VALUES[0] = Number(TOTAL_CUSTOM_PRICE) * 0.95;
     REDUCED_VALUES[1] = Number(TOTAL_CUSTOM_PRICE) * 0.9;
