@@ -8,13 +8,19 @@ aloneInput.addEventListener('change', (e) => {
     const innerHTMLprices = [12];
 
     for (let i = 0; i < e.target.value; i++) {
+        if(i == 39){
+            prices.pop();
+            prices.push(12);    
+        }
+
         var newPrice = prices[i] * 0.95;
         prices.push(newPrice);
         const NEW_PRICE = prices.reduce((accumulator, currentValue) => accumulator + currentValue);
         innerHTMLprices.push(NEW_PRICE.toFixed(2));
+        console.log(prices);
     }
 
-    alonePrice.innerHTML = `$ ${innerHTMLprices[e.target.value - 1]}`;   
+    alonePrice.innerHTML = `$ ${innerHTMLprices[e.target.value - 1]}`;
 });
 
 // custom card
@@ -53,6 +59,11 @@ ZabbixSelector.addEventListener('change', (e) => {
     const innerHTMLprices = [128.25];
 
     for (let i = 0; i < e.target.value; i++) {
+        if(i == 39){
+            prices.pop();
+            prices.push(128.25);    
+        }
+
         var newPrice = prices[i] * 0.95;
         prices.push(newPrice);
         const NEW_PRICE = prices.reduce((accumulator, currentValue) => accumulator + currentValue);
