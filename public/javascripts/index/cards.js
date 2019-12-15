@@ -8,9 +8,9 @@ aloneInput.addEventListener('change', (e) => {
     const innerHTMLprices = [12];
 
     for (let i = 0; i < e.target.value; i++) {
-        if(i == 39 || i == 79 || i == 119){
+        if (i == 39 || i == 79 || i == 119 || i == 159 || i == 199) {
             prices.pop();
-            prices.push(12);    
+            prices.push(12);
         }
 
         var newPrice = prices[i] * 0.95;
@@ -59,9 +59,9 @@ ZabbixSelector.addEventListener('change', (e) => {
     const innerHTMLprices = [128.25];
 
     for (let i = 0; i < e.target.value; i++) {
-        if(i == 39 || i == 79 || i == 119){
+        if (i == 39 || i == 79 || i == 119 || i == 159 || i == 199) {
             prices.pop();
-            prices.push(128.25);    
+            prices.push(128.25);
         }
 
         var newPrice = prices[i] * 0.95;
